@@ -1,0 +1,184 @@
+.home{
+   margin: 20px 0 60px;
+   .main{
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Raleway';
+      font-weight: 700;
+      font-size: 15px;
+      font-weight: 140%;
+      letter-spacing: 0.02em;
+      &__content{
+         width: 500px;
+         &-title{
+            margin-top: 100px;
+            font-size: 46px;
+         }
+         &-info{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-top: 50px;
+            width: 70%;
+            &-text{
+               margin-top: 40px;
+               display: flex;
+               justify-content:flex-end;
+               font-weight: 500;
+               font-size: 20px;
+               font-weight: 140%;
+            }
+            &-button{
+               margin-top: 80px;
+               padding: 10px 20px;
+               font-weight: 500;
+               font-size: 18px;
+               background-color: $green;
+               border:1px solid $green;
+               color: $white;
+               cursor: pointer;
+               &:hover{
+                  background-color: $white;
+                  border:1px solid $darkgreen;
+                  color: $darkgreen;
+               }
+            }
+         } 
+      }
+      &__images{
+         display: flex;
+         justify-content: start;
+         &-left{
+            background-image: url('../../images/home-left.png');
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            margin-right: -70px;
+            margin-top: 330px;
+            z-index: 3;
+         }
+         &-center{
+            background-image: url('../../images/home-center.png');
+            background-size: cover;
+            width: 400px;
+            height: 600px;
+            z-index: 2;
+         }
+         &-right{
+            background-image: url('../../images/home-right.png');
+            background-size: cover;
+            width: 170px;
+            height: 170px;
+            margin-left: -70px;
+            margin-top: 100px;
+            z-index: 3;
+         }
+      }
+   }
+   .collection{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      &__title{
+      }
+      &__images{
+         margin-top: 50px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         &-item{
+            width: 330px;
+         }
+      }
+      &__button{
+         display: flex;
+         justify-content: center;
+         &-btn{
+            margin-top: 43px;
+            width: 185px;
+            height: 40px;
+            font-weight: 500;
+            font-size: 18px;
+            background-color: $white;
+            border:1px solid $darkgreen;
+            color: $darkgreen;
+            cursor: pointer;
+            &:hover{
+            background-color: $green;
+            border:1px solid $green;
+            color: $white;
+         }
+         }
+      }
+   }
+   .important{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      &__critetions{
+         margin-top: 50px;
+         display: flex;
+         justify-content: space-between;
+         &-item{
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            &-icon{
+               width: 40px;
+               margin-bottom: 20px;
+            }
+            &-text{
+               margin-top: 20px;
+               font-family: 'Raleway';
+               font-weight: 500;
+               font-size: 16px;
+               font-weight: 140%;
+               letter-spacing: 0.02em;
+            }
+         }
+
+      }
+   }
+   .team{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      &__content{
+         margin-top: 50px;
+         display: flex;
+         justify-content: space-between;
+         &-image{
+            width: 700px;
+         }
+         &-info{
+            display: flex;
+            flex-direction: column;
+            margin: 60px 0 30px 80px;
+         }
+         &-title{
+            margin-bottom: 40px;
+         }
+         &-text{
+            margin-bottom: 40px;
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 16px;
+            font-weight: 140%;
+            letter-spacing: 0.02em;
+         }
+         &-link{
+            margin-bottom: 40px;
+            font-weight: 600;
+            color:#6E9C9F;
+            cursor: pointer;
+            &:hover{
+               text-decoration: underline;
+            }
+
+         }
+      }
+   }
+}
+
+
+

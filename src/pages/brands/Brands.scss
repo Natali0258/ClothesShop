@@ -1,0 +1,50 @@
+.brands {
+   margin: 40px 0 60px;
+   &__magic,
+   &__idea {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 0 30px;
+      &-image {
+         width: 44%;
+      }
+      &-info {
+         display: flex;
+         flex-direction: column;
+         align-self: center;
+         width: 44%;
+         &-title {
+            margin-bottom: 40px;
+         }
+         &-text {
+            margin-bottom: 40px;
+            font-family: "Raleway";
+            font-weight: 600;
+            font-size: 16px;
+            font-weight: 140%;
+            letter-spacing: 0.02em;
+         }
+      }
+   }
+   &__button{
+      display: flex;
+      justify-content: center;
+      &-btn{
+         margin-top: 43px;
+         // width: 185px;
+         // height: 40px;
+         padding: 17px 30px;
+         font-weight: 500;
+         font-size: 16px;
+         background-color: $green;
+         border:1px solid $green;
+         color: $white;
+         cursor: pointer;
+         &:hover{
+            background-color: $white;
+            border:1px solid $darkgreen;
+            color: $darkgreen;
+      }
+      }
+   }
+}

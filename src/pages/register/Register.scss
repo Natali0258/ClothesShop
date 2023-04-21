@@ -1,0 +1,25 @@
+.register{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   &__form{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      width: 300px;
+      & input{
+         width: 100%;
+         padding: 10px 20px;
+      }
+      & button{
+         width: 50%;
+         padding: 10px 20px;
+         background-color: $green;
+         border: none;
+      }
+      &-signin{
+         color: $darkgreen;
+      }
+   }
+}

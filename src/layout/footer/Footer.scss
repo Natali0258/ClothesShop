@@ -1,0 +1,120 @@
+.wrapper{
+   background-color: rgb(235, 225, 205);
+   .footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 40px 0;
+      font-family: 'Raleway';
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      &__left{
+         display: flex;
+         flex-direction: column;
+         &-logo{
+            display: flex;
+            align-items: center;
+            margin-bottom:50px;
+            &-image{
+               width: 50px;
+               margin: 0;
+            }
+            &-text{
+               font-size: 34px;
+               font-weight: 800;
+               color: #010002;
+               margin: 10px;
+            }
+         }
+         &-text{
+            margin-bottom: 5px;
+         }
+      }
+      &__links{
+         display: flex;
+         justify-content: center;
+         align-items: start;
+         font-size: 18px;
+         margin-top: 25px;
+         & a{
+            margin-left: 45px;
+         }
+      }
+      &__link{
+         &.active{
+            color: #6E9C9F;
+         }
+         &:hover{
+            text-decoration: underline;
+         }
+         &-item{
+            &-shop{
+               margin-top: 30px;
+               margin-left: 45px;
+               & li{
+                  margin-bottom: 7px;
+                  font-size: 16px;
+                  &:hover{
+                     text-decoration: underline;
+                     cursor: pointer;
+                  }
+               }
+            }
+         }
+      }
+      &__contacts{
+         display: flex;
+         flex-direction: column;
+         align-items: end;
+         margin-top: 35px;
+         &-phone{
+            &:hover{
+               text-decoration: underline;
+               color: #6E9C9F;
+            }
+         }
+         &-email{
+            margin-top:10px;
+            &:hover{
+               text-decoration: underline;
+               color: #6E9C9F;
+            }
+         }
+         &-networks{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            &-item{
+               width: 25px;
+               margin-left: 7px;
+               &:hover{
+                  transform:scale(1.2)
+               }
+            }
+         }
+         &-pay{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            &-visa{
+               width: 40px;
+               margin-left: 7px;
+            }
+            &-mastercard{
+               display: flex;
+               flex-direction: column;
+               margin-left: 7px;
+               &-logo{
+                  width: 35px;
+               }
+               &-text{
+                  width: 35px;
+                  font-size: 5px;
+                  margin-top: -8px;
+               }
+            }
+         }
+      }
+   }
+}

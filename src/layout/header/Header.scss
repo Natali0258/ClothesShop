@@ -1,0 +1,95 @@
+.header{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 40px;
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 15px;
+   font-weight: 140%;
+   letter-spacing: 0.02em;
+
+   &__logo{
+      display: flex;
+      align-items: center;
+      &-image{
+         width: 50px;
+         margin: 0;
+      }
+      &-text{
+         font-size: 34px;
+         font-weight: 800;
+         color: #010002;
+         margin: 10px;
+      }
+   }
+   &__links{
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      & a{
+         margin-left: 25px;
+      }
+   }
+   &__link{
+      &.active{
+         color: #6E9C9F;
+      }
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+   &__contacts{
+      display: flex;
+      align-items: center;
+      &-icon{
+         color: #6E9C9F;
+         margin-right: 10px;
+      }
+      &-phone{
+         font-size: 18px;
+         &:hover{
+            text-decoration: underline;
+            color: #6E9C9F;
+         }
+      }
+      &-image{
+         width: 20px;
+         margin: 10px;
+         transition: 1s;
+         &:hover{
+            transform: scale(1.2);
+         }
+      }
+      &-lang{
+         margin-left: 20px;
+         &-ru{
+            font-size: 14px;
+            padding: 3px 7px;
+            background-color: $white;
+            border-radius: 5px 0 0 5px;
+            border-top: 2px solid $green;
+            border-left: 2px solid $green;
+            border-bottom: 2px solid $green;
+            border-right: 1px solid $green;
+            &:hover{
+               background-color: $green;
+            }
+         }
+         &-en{
+            font-size: 14px;
+            padding: 3px 7px;
+            margin-right: 10px;
+            background-color: $white;
+            border-radius: 0 5px 5px 0;
+            border-top: 2px solid $green;
+            border-left: 1px solid $green;
+            border-bottom: 2px solid $green;
+            border-right: 2px solid $green;
+            &:hover{
+               background-color: $green;
+            }
+         }
+      }
+   }
+
+}

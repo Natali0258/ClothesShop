@@ -1,0 +1,581 @@
+{
+  "users": [
+    {
+      "email": "natali0258@yandex.ru",
+      "password": "$2a$10$1P3KjsiELDa6A1M3fpMxwOU2CzM6I.HIZ8zu96rP/4JoNv83cXdrO",
+      "login": "Natali",
+      "phone": "+7 913 382 17 67",
+      "orders": [],
+      "id": 1
+    }
+  ],
+  "cloth": [
+    {
+      "id": 1,
+      "title": "Юбка Namelazz",
+      "price": 1500,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "green",
+        "black",
+        "white"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Рубашка Lime",
+      "price": 1500,
+      "image": "",
+      "category": "shirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "black",
+        "white"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Джинсы Emka",
+      "price": 1990,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "black"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Джинсы 2MOOD",
+      "price": 2100,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "light blue",
+        "blue",
+        "black"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Джинсы Studio29",
+      "price": 2500,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "light blue",
+        "blue",
+        "black"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Джинсы PLMB",
+      "price": 2200,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "x",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "dark blue",
+        "black"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Джинсы Love Republic",
+      "price": 1700,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "white"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Джинсы Lio",
+      "price": 1800,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "blue",
+        "green",
+        "black"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Джинсы TopTop",
+      "price": 1900,
+      "image": "",
+      "category": "jeans",
+      "size": [
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "dark blue",
+        "light blue",
+        "blue"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Рубашка Present&Simple",
+      "price": 1600,
+      "image": "",
+      "category": "shirts",
+      "size": [
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "light blue",
+        "white"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Рубашка Charuel",
+      "price": 1600,
+      "image": "",
+      "category": "shirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Рубашка Emka",
+      "price": 1300,
+      "image": "",
+      "category": "shirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "light blue"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Рубашка Zara",
+      "price": 1400,
+      "image": "",
+      "category": "shirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "white",
+        "light blue"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Пальто Studio29",
+      "price": 8000,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "white",
+        "green",
+        "black"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Пальто Furly",
+      "price": 8600,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "x",
+        "m",
+        "xl"
+      ],
+      "colors": [
+        "white",
+        "green",
+        "black",
+        "blue"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Пальто DreamWhite",
+      "price": 9000,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "white",
+        "green",
+        "black"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Пальто Shi trendy",
+      "price": 7800,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "brown",
+        "green",
+        "black"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Пальто Choux",
+      "price": 8300,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "green",
+        "black"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Пальто Shi Shi",
+      "price": 9900,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "black"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Пальто Max Mara",
+      "price": 8800,
+      "image": "",
+      "category": "cout",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "black"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Костюм Coshi",
+      "price": 3100,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "black"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Костюм Botrois",
+      "price": 3300,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "dark grey",
+        "black"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Юбка Shi trendy",
+      "price": 1600,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "light blue"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Юбка MSGM",
+      "price": 1650,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "blue",
+        "light blue",
+        "dark blue"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Юбка Lime",
+      "price": 1350,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "grey",
+        "light grey",
+        "dark grey"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Костюм Zarina",
+      "price": 3400,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "dark grey",
+        "black"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Костюм Zara",
+      "price": 2900,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "blue",
+        "grey",
+        "white"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Юбка Nikonorova",
+      "price": 200,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "black"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Юбка Prada",
+      "price": 3000,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "black"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Костюм Nude story",
+      "price": 3990,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "light grey",
+        "dark grey"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Костюм PIRS",
+      "price": 3500,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "pink",
+        "blue"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Костюм The Row",
+      "price": 3400,
+      "image": "",
+      "category": "costumes",
+      "size": [
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "dark grey",
+        "grey",
+        "black"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Юбка You Wana",
+      "price": 3000,
+      "image": "",
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "black"
+      ]
+    }
+  ]
+}
