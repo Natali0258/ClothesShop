@@ -1,7 +1,9 @@
+ClothShop - этот маркетрлайс написан на React с использованием Context. 
+В проекте в качестве REST API используется  JSON-server.
+
 # Getting Started with Create React Ap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-В проекте в качестве REST API используется  JSON-server.
 
 ## Available Scripts
 
