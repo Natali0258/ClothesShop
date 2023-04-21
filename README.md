@@ -1,5 +1,5 @@
-ClothShop - этот маркетрлайс написан на React с использованием Context. 
-В проекте в качестве REST API используется  JSON-server.
+ClothShop - этот интернет-магазин написан на React с использованием Context. 
+В проекте в качестве REST API используется JSON-server.
 
 # Getting Started with Create React Ap
 
