@@ -8,24 +8,10 @@ import 'antd/dist/antd.css';
 import { Pagination } from 'antd';
 
 const Shop = () => {
-   const [sort, setSort] = useState(false)
+   const [sort, setSort] = useState('less')
    const [status, setStatus] = useState('all')
    const [page, setPage] = useState(1)
    const { shop } = useContext(CustomContext)
-   const options = [
-      {
-         //value: "cheap",
-         value: "less",
-         label: "сначала дешевые"
-      },
-      {
-         //value: "expensive",
-         value: "big",
-         label: "сначала дорогие"
-      }
-   ]
-
-   const getValue = (value) => value ? options.find(option => option.value === value) : ""
 
    const {
       register,
@@ -38,9 +24,9 @@ const Shop = () => {
       reset
    } = useForm()
 
-   // useEffect((sort) => {
-
-   // }, [sort])
+   const hangleSort = (event) => {
+      setSort(event.target.value);
+   }
 
    return (
       <div className="container">
@@ -66,31 +52,22 @@ const Shop = () => {
                         return idx + 1 <= page * 9 && idx + 1 > page * 9 - 9
                      }).length} из {shop.filter(item => status === 'all' ? item : item.category === status).length} товаров</p>
 
-                  <Controller
-                     control={control}
-                     name="sort"
-                     render={({ field: { onChange, value }, fieldState: { error } }) => (
-                        <div>
-                           <ReactSelect
-                              placeholder="сортировать по"
-                              options={options}
-                              value={getValue(value)}
-                              onChange={newValue => {
-                                 onChange(newValue.value)
-                                 setSort(true)
-                              }}
-                           />
-                           <span style={{ color: "red" }}>{errors?.sort && errors?.sort?.message}</span>
-                        </div>
-                     )}
-                  />
+                  <div>
+                     <label htmlFor="select">сортировать по: </label>
+                     <select name="select" id="select"
+                        value="sort"
+                        onChange={hangleSort}>
+                        <option value="less">сначала дешевые</option>
+                        <option value="big">сначала дорогие</option>
+                     </select>
+                  </div>
                </div>
 
                <div className="shop__products-collection">
                   {shop.sort((a, b) => {
-                     if (options.value === 'less') {
+                     if (sort === 'less') {
                         return (a.priceSale || a.price) - (b.priceSale || b.price)
-                     } else if (options.value === 'big') {
+                     } else if (sort === 'big') {
                         return (b.priceSale || b.price) - (a.priceSale || a.price)
                      }
                   }).filter(item => {
