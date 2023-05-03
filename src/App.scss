@@ -36,20 +36,15 @@ $green: #6E9C9F;
 $darkgreen: #567a7c;
 $lightgrey: rgb(180, 178, 178);
 $grey: rgb(116, 115, 115);
+$lightlightgrey: rgb(235, 225, 205);
 
-.btn{
-   font-family: "Raleway";
-   font-style: normal;
-   font-size: 16px;
-   font-weight: 900px;
-   background-color: $white;
-   color: $grey;
-   border: 2px solid $lightgrey;
-   &:hover{
-      background-color: $black;
-      border: 2px solid $black;
-      color: $white;
-   }
+.title{
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 110%;
+   letter-spacing: 0.02em;
+   color: $black;
+   margin-bottom: 26px;
 }
 @font-face {
    font-family: "Raleway";
@@ -92,6 +87,8 @@ $grey: rgb(116, 115, 115);
 @import './pages/home/Home.scss';
 @import './pages/shop/Shop.scss';
 @import './pages/brands/Brands.scss';
+@import './pages/contact/Contact.scss';
+@import './pages/profile/Profile.scss';
 @import './pages/login/Login.scss';
 @import './pages/register/Register.scss';
 @import './pages/card/Card.scss';

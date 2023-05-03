@@ -1,18 +1,56 @@
 .card{
-   width: 330px;
    text-align:center;
    &__image{
-      width: 100%;
+      height: 450px;
+      position:relative;
+      &-photo{
+         height: 100%;
+         z-index: 2;
+         &:hover{
+            cursor: pointer;
+            z-index:2;
+         }
+      }
+      &-overlay{
+         display:none;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         // background: $green;
+         opacity: 50%;
+         z-index:1;
+         &-triangle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 14px solid transparent; /* Прозрачные границы */
+            border-left: 28px solid white; /* Добавляем треугольник */
+            cursor: pointer;
+            z-index:1;
+         }
+      }
+      &:hover .card__image-overlay{
+         z-index:3; 
+         opacity: 1;
+      }
+      &:hover .card__image-overlay-triangle{
+         z-index:3; 
+         opacity:1;
+      }
    }
    &__name{
       margin-top: 20px;
       font-weight: 500;
       font-size: 18px;
+      line-height: 140%;
    }
    &__price{
       margin-top: 5px;
       font-weight: 500;
-      font-size: 16px;
-      color: $darkgreen;
+      font-size: 15px;
+      line-height: 140%;
+      color: $green;
    }
 }

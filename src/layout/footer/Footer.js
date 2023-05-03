@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../images/header-logo.svg';
 import { NavLink } from 'react-router-dom';
 import instagram from '../../images/footer-instagram.svg';
@@ -8,6 +8,8 @@ import visa from '../../images/footer-visa.png';
 import mastercard from '../../images/footer-mastercard.svg';
 
 const Footer = () => {
+   const [status, setStatus] = useState('all')
+   const [page, setPage] = useState(1)
    return (
       <div className="wrapper">
          <div className="container">
@@ -26,11 +28,11 @@ const Footer = () => {
                   <li className="footer__link-item"><NavLink className="footer__link" to="/">Главная</NavLink></li>
                   <li className="footer__link-item"><NavLink className="footer__link" to="/shop">Магазин</NavLink>
                      <ul className="footer__link-item-shop">
-                        <li>Пальто</li>
-                        <li>Костюмы</li>
-                        <li>Джинсы</li>
-                        <li>Юбки</li>
-                        <li>Рубашки</li>
+                        <li><NavLink className="footer__link-item-shop" to="/shop" onClick={() => { setStatus('coat'); setPage(1) }}>Пальто</NavLink></li>
+                        <li><NavLink className="footer__link-item-shop" to="/shop" onClick={() => { setStatus('costumes'); setPage(1) }}>Костюмы</NavLink></li>
+                        <li><NavLink className="footer__link-item-shop" to="/shop" onClick={() => { setStatus('jeans'); setPage(1) }}>Джинсы</NavLink></li>
+                        <li><NavLink className="footer__link-item-shop" to="/shop">Юбки</NavLink></li>
+                        <li><NavLink className="footer__link-item-shop" to="/shop">Рубашки</NavLink></li>
                      </ul>
                   </li>
                   <li className="footer__link-item"><NavLink className="footer__link" to="/brands">О бренде</NavLink></li>

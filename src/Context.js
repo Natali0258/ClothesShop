@@ -5,15 +5,22 @@ import axios from "axios";
 export const CustomContext = createContext()
 
 export const Context = (props) => {
-   const [count, setCount] = useState('1');
+
    const [user, setUser] = useState({
       login: ""
    })
+   const [shop, setShop] = useState([])
+
    const navigate = useNavigate()
 
    //при обнавлении страницы данные о user'е берутся из localStorage
    useEffect(() => {
-      setUser(JSON.parse(localStorage.getItem('user')))
+      if (localStorage.getItem('user' !== "null")) {
+         setUser(JSON.parse(localStorage.getItem('user')))
+      }
+      //GET-запрос:
+      axios("http://localhost:3001/clothes")
+         .then(({ data }) => setShop(data))
    }, [])
 
    const registerUser = (data) => {
@@ -41,11 +48,11 @@ export const Context = (props) => {
       })
    }
    const value = {
-      count, setCount,
       user, setUser,
       registerUser,
       loginUser,
-      logOutUser
+      logOutUser,
+      shop, setShop
    }
 
    return <CustomContext.Provider value={value}>

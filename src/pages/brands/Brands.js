@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import idea from '../../images/brands-idea.jpg';
 import magic from '../../images/brands-magic.jpg';
 
@@ -6,7 +7,10 @@ const Brands = () => {
    return (
       <div className="container">
          <div className="brands">
-            <h2 className="brands__title">О бренде</h2>
+            <h2 className="title">О бренде</h2>
+            <NavLink to="/" className="brands__link-left">Главная</NavLink>
+            &#8226;
+            <NavLink to="/brands" className="brands__link-right">О бренде</NavLink>
             <section className="brands__idea">
                <img className="brands__idea-image" src={idea} alt="idea" />
                <div className="brands__idea-info">

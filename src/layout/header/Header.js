@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CustomContext } from "../../Context";
 import { NavLink, Link } from "react-router-dom";
 import bag from '../../images/header-bag.png';
+import { FaUser } from "react-icons/fa";
 import logo from '../../images/header-logo.svg';
 import { useTranslation } from "react-i18next";
 import '../../i18n';
@@ -42,8 +43,13 @@ const Header = () => {
 
                {
                   (user && user.login.length > 0) ?
-                     <Link to="/" onClick={() => logOutUser()}>Выйти</Link> :
-                     <Link to="/login">Войти</Link>
+                     <div className="header__contacts-logout">
+                        <Link to="/profile">
+                           <FaUser className="header__contacts-logout-user" />
+                        </Link>
+                        <Link to="/" className="header__contacts-logout-link" onClick={() => logOutUser()}>Выйти</Link>
+                     </div> :
+                     <Link to="/login" className="header__contacts-signin">Войти</Link>
                }
             </div>
          </div>

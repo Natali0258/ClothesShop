@@ -1,5 +1,5 @@
 .wrapper{
-   background-color: rgb(235, 225, 205);
+   background-color: $lightlightgrey;
    .footer{
       display: flex;
       justify-content: space-between;
@@ -42,16 +42,18 @@
          }
       }
       &__link{
+         color: $black;
          &.active{
-            color: #6E9C9F;
+            color: $green;
          }
          &:hover{
+            color: $green;
             text-decoration: underline;
          }
          &-item{
             &-shop{
                margin-top: 30px;
-               margin-left: 45px;
+               color: $black;
                & li{
                   margin-bottom: 7px;
                   font-size: 16px;
@@ -59,6 +61,9 @@
                      text-decoration: underline;
                      cursor: pointer;
                   }
+               }
+               &:hover{
+                  color: $green;
                }
             }
          }
@@ -68,18 +73,15 @@
          flex-direction: column;
          align-items: end;
          margin-top: 35px;
-         &-phone{
+         &-phone, &-email{
+            color: $black;
             &:hover{
                text-decoration: underline;
-               color: #6E9C9F;
+               color: $green;
             }
          }
          &-email{
             margin-top:10px;
-            &:hover{
-               text-decoration: underline;
-               color: #6E9C9F;
-            }
          }
          &-networks{
             margin-top: 20px;

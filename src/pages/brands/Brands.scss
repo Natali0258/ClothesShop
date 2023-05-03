@@ -1,5 +1,22 @@
 .brands {
    margin: 40px 0 60px;
+   &__link{
+      &-left{
+         margin-right: 10px;
+      }
+      &-right{
+         margin-left: 10px;
+      }
+      &-left, &-right{
+         color: $black;
+         &.active{
+            color: #6E9C9F;
+         }
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }
    &__magic,
    &__idea {
       display: flex;
@@ -31,8 +48,6 @@
       justify-content: center;
       &-btn{
          margin-top: 43px;
-         // width: 185px;
-         // height: 40px;
          padding: 17px 30px;
          font-weight: 500;
          font-size: 16px;

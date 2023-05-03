@@ -20,11 +20,18 @@ const Register = () => {
             <h2>Регистрация</h2>
             <input {...register('email', { required: "Это поле обязательное" })} type="email" placeholder="Введите email" />
             <span>{errors?.email && errors?.email?.message}</span>
-            <input {...register('login')} type="login" placeholder="Введите login" />
-            <input {...register('phone')} type="tel" placeholder="Введите номер телефона" />
+
+            <input {...register('login', { required: "Это поле обязательное" })} type="login" placeholder="Введите login" />
+            <span>{errors?.login && errors?.login?.message}</span>
+
+            <input {...register('phone', { required: "Это поле обязательное" })} type="tel" placeholder="Введите номер телефона" />
+            <span>{errors?.phone && errors?.phone?.message}</span>
+
             <input {...register('password', { required: "Это поле обязательное" })} type="password" placeholder="Введите пароль" />
             <span>{errors?.password && errors?.password?.message}</span>
+
             <input type="password" placeholder="Подтвердите пароль" />
+
             <button type="submit">Регистрация</button>
             <p>
                Есть аккаунт, <Link to="/login" className="register__form-signin">Войти</Link>

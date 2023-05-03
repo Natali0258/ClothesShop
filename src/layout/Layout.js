@@ -5,6 +5,7 @@ import Footer from './footer/Footer';
 import Contact from '../pages/contact/Contact';
 import Home from '../pages/home/Home';
 import Shop from '../pages/shop/Shop';
+import Profile from '../pages/profile/Profile';
 import Brands from '../pages/brands/Brands';
 import NotFaund from '../pages/notFaund/NotFaund';
 import Login from '../pages/login/Login';
@@ -22,6 +23,7 @@ const Layout = () => {
             <Route path="/shop" element={<Shop />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<NotFaund />} />
@@ -30,6 +32,7 @@ const Layout = () => {
             || location.pathname === '/shop'
             || location.pathname === '/brands'
             || location.pathname === '/contact'
+            || location.pathname === '/profile'
             ? < Footer /> : ''
          }
       </div>
