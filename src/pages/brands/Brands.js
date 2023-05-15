@@ -8,9 +8,12 @@ const Brands = () => {
       <div className="container">
          <div className="brands">
             <h2 className="title">О бренде</h2>
-            <NavLink to="/" className="brands__link-left">Главная</NavLink>
-            &#8226;
-            <NavLink to="/brands" className="brands__link-right">О бренде</NavLink>
+            <div className="brands__link">
+               <NavLink to="/" className="brands__link-left link">Главная</NavLink>
+               &#8226;
+               <p className="brands__link-right current">О бренде</p>
+            </div>
+
             <section className="brands__idea">
                <img className="brands__idea-image" src={idea} alt="idea" />
                <div className="brands__idea-info">

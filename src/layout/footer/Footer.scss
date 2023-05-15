@@ -54,18 +54,31 @@
             &-shop{
                margin-top: 30px;
                color: $black;
-               & li{
-                  margin-bottom: 7px;
-                  font-size: 16px;
+               &-status{
+                  color: $black;
+                  & li{
+                     margin-bottom: 7px;
+                     font-size: 16px;
+                     &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                     }
+                  }
                   &:hover{
-                     text-decoration: underline;
-                     cursor: pointer;
+                     color: $green;
                   }
                }
-               &:hover{
-                  color: $green;
-               }
             }
+         }
+      }
+      &__status{
+         color: $black;
+         &_active{
+            color: $green;
+         }
+         &:hover{
+            color: $green;
+            text-decoration: underline;
          }
       }
       &__contacts{

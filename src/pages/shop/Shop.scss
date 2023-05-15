@@ -1,20 +1,12 @@
 .shop{
    margin: 40px 0 60px;
    &__link{
+      display:flex;
       &-left{
          margin-right: 10px;
       }
       &-right{
          margin-left: 10px;
-      }
-      &-left, &-right{
-         color: $black;
-         &.active{
-            color: #6E9C9F;
-         }
-         &:hover{
-            text-decoration: underline;
-         }
       }
    }
    &__category{
@@ -46,6 +38,40 @@
          &-info{
             color: $lightgrey;
          }
+         &-sort{
+            text-align: center;
+            &-buttons{
+               &-btn{
+                  margin-left: 10px;
+                  padding: 5px 10px;
+                  background-color: $white;
+                  border: 2px solid $green;
+                  border-radius: 5px;
+                  &:hover{
+                     background-color: $green;
+                  }
+                  &_active{
+                     background-color: $green;
+                     color: $white;
+                  }
+               }
+            }
+         }
+         &-discount{
+            display:flex;
+            margin-top: 30px;
+            padding: 5px 10px;
+            background-color: $white;
+            border: 2px solid $green;
+            border-radius: 5px;
+            &:hover{
+               background-color: $green;
+            }
+            &_active{
+               background-color: $green;
+               color: $white;
+            }
+         }
       }
       &-collection{
          display: flex;
@@ -55,6 +81,7 @@
          &-card{
             width: 31%;
             height: 550px;
+            margin-top: 10px;
          }
       }
    }

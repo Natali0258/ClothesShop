@@ -16,9 +16,12 @@ const Contact = () => {
       <div className="container">
          <div className="contact">
             <h2 className="title">Контакты</h2>
-            <NavLink to="/" className="contact__link-left">Главная</NavLink>
-            &#8226;
-            <NavLink to="/contact" className="contact__link-right">Контакты</NavLink>
+            <div className="contact__link">
+               <NavLink to="/" className="contact__link-left link">Главная</NavLink>
+               &#8226;
+               <p className="contact__link-right current">Контакты</p>
+            </div>
+            
 
             <section className="contact__map">
                <div className="contact__map-image">Карта с любой точкой</div>

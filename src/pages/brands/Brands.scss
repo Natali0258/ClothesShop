@@ -1,20 +1,12 @@
 .brands {
    margin: 40px 0 60px;
    &__link{
+      display:flex;
       &-left{
          margin-right: 10px;
       }
       &-right{
          margin-left: 10px;
-      }
-      &-left, &-right{
-         color: $black;
-         &.active{
-            color: #6E9C9F;
-         }
-         &:hover{
-            text-decoration: underline;
-         }
       }
    }
    &__magic,

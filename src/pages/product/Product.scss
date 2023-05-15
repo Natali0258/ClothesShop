@@ -1,0 +1,144 @@
+.product{
+    padding-top: 60px;
+
+    &__link{
+        display: flex;
+        &-left{
+            margin-right: 10px;  
+        }
+        &-right{
+            margin-left: 10px;
+            margin-right: 10px; 
+        }
+        &-title{
+            margin-left: 10px; 
+        }
+    }
+    &__content{
+        display: flex;
+        column-gap: 74px;
+        &-image{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 50%;
+            max-width: 536px;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            &-price{
+                display: flex;
+                justify-content: start;
+                margin-bottom: 67px;
+                padding: 0;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 110%;
+                letter-spacing: 0.02em;
+                color: $green;
+                &-item{
+                    margin-left: 15px;
+                    align-self: center;
+                    text-decoration: line-through;
+                    font-size: 30px;
+                }
+            }
+            &-size{
+                display: flex;
+                margin-bottom: 67px;
+                column-gap: 15px;
+                &-item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 41px;
+                    height: 41px;
+                    border: 1px solid $black;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 140%;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    &:hover, &_active{
+                        color: $white;
+                        background: $black;
+                        transition: 0.3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+            &-colors{
+                display: flex;
+                justify-content: start;
+                margin-bottom: 67px;
+                &-item{
+                    text-align: center;
+                    margin-right: 10px;
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    border: 1px solid $black;
+                    &_active{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            bottom:-5px;
+                            left: 0;
+                            width: 41px;
+                            height: 2px;
+                            background: $black;
+                        }
+                    }
+                }
+            }
+            &-form{
+                display: flex;
+                column-gap: 7px;
+                &-input{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 68px;
+                    height: 68px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 140%;
+                }
+                &-btn{
+                    padding: 0 50px;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 140%;
+                    letter-spacing: 0.02em;
+                    color: $white;
+                    background: $green;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            // выбор числа с помощью стрелок на экране при помощи мыши
+            // изменен на ввод числа с помощью стрелок с клавиатуры:
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+    &__variant{
+        margin: 60px 0 60px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+        letter-spacing: 0.02em;
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+}

@@ -15,7 +15,9 @@
       "title": "Юбка Namelazz",
       "price": 1500,
       "priceSale": 1199,
-      "image": "../shop/Юбка Namelazz.png",
+      "image": [
+        "../shop/Юбка Namelazz.png"
+      ],
       "category": "skirts",
       "size": [
         "x",
@@ -24,9 +26,8 @@
         "xl"
       ],
       "colors": [
-        "green",
         "black",
-        "white"
+        "gainsboro"
       ]
     },
     {
@@ -34,7 +35,9 @@
       "title": "Рубашка Lime",
       "price": 1500,
       "priceSale": 1199,
-      "image": "../shop/Рубашка Lime.png",
+      "image": [
+        "../shop/Рубашка Lime.png"
+      ],
       "category": "shirts",
       "size": [
         "x",
@@ -43,7 +46,7 @@
         "xl"
       ],
       "colors": [
-        "blue",
+        "beige",
         "black",
         "white"
       ]
@@ -52,7 +55,10 @@
       "id": 3,
       "title": "Джинсы Emka",
       "price": 1990,
-      "image": "../shop/Джинсы Emka.png",
+      "image": [
+        "../shop/Джинсы Emka синие.png",
+        "../shop/Джинсы Emka черные.png"
+      ],
       "category": "jeans",
       "size": [
         "x",
@@ -61,7 +67,7 @@
         "xl"
       ],
       "colors": [
-        "blue",
+        "steelblue",
         "black"
       ]
     },
@@ -69,7 +75,10 @@
       "id": 4,
       "title": "Джинсы 2MOOD",
       "price": 2100,
-      "image": "../shop/Джинсы 2MOOD.png",
+      "image": [
+        "../shop/Джинсы 2MOOD голубые.png",
+        "../shop/Джинсы 2MOOD синие.png"
+      ],
       "category": "jeans",
       "size": [
         "x",
@@ -78,16 +87,19 @@
         "xl"
       ],
       "colors": [
-        "light blue",
-        "blue",
-        "black"
+        "lavender",
+        "powderblue"
       ]
     },
     {
       "id": 5,
       "title": "Джинсы Studio29",
       "price": 2500,
-      "image": "../shop/Джинсы Studio29.png",
+      "image": [
+        "../shop/Джинсы Studio29 синие.png",
+        "../shop/Джинсы Studio29 голубые.png",
+        "../shop/Джинсы Studio29 темно-синие.png"
+      ],
       "category": "jeans",
       "size": [
         "x",
@@ -96,16 +108,19 @@
         "xl"
       ],
       "colors": [
-        "light blue",
-        "blue",
-        "black"
+        "lightblue",
+        "lavender",
+        "steelblue"
       ]
     },
     {
       "id": 6,
       "title": "Джинсы PLMB",
       "price": 2200,
-      "image": "../shop/Джинсы PLMB.png",
+      "image": [
+        "../shop/Джинсы PLMB черные.png",
+        "../shop/Джинсы PLMB синие.png"
+      ],
       "category": "jeans",
       "size": [
         "x",
@@ -113,16 +128,17 @@
         "xl"
       ],
       "colors": [
-        "blue",
-        "dark blue",
-        "black"
+        "black",
+        "steelblue"
       ]
     },
     {
       "id": 7,
       "title": "Джинсы Love Republic",
       "price": 1700,
-      "image": "../shop/Джинсы Love Republic.png",
+      "image": [
+        "../shop/Джинсы Love Republic.png"
+      ],
       "category": "jeans",
       "size": [
         "x",
@@ -131,7 +147,8 @@
         "xl"
       ],
       "colors": [
-        "white"
+        "white",
+        "gainsboro"
       ]
     },
     {
@@ -139,7 +156,9 @@
       "title": "Джинсы Lio",
       "price": 1800,
       "priceSale": 1299,
-      "image": "../shop/Джинсы Lio.png",
+      "image": [
+        "../shop/Джинсы Lio.png"
+      ],
       "category": "jeans",
       "size": [
         "x",
@@ -147,16 +166,17 @@
         "l"
       ],
       "colors": [
-        "blue",
-        "green",
-        "black"
+        "wheat",
+        "white"
       ]
     },
     {
       "id": 9,
       "title": "Джинсы TopTop",
       "price": 1900,
-      "image": "../shop/Джинсы TopTop.png",
+      "image": [
+        "../shop/Джинсы TopTop.png"
+      ],
       "category": "jeans",
       "size": [
         "m",
@@ -164,8 +184,7 @@
         "xl"
       ],
       "colors": [
-        "dark blue",
-        "light blue",
+        "gainsboro",
         "blue"
       ]
     },
@@ -173,7 +192,9 @@
       "id": 10,
       "title": "Рубашка Present&Simple",
       "price": 1600,
-      "image": "../shop/Рубашка Present&Simple.png",
+      "image": [
+        "../shop/Рубашка Present&Simple.png"
+      ],
       "category": "shirts",
       "size": [
         "m",
@@ -181,7 +202,7 @@
         "xl"
       ],
       "colors": [
-        "light blue",
+        "gainsboro",
         "white"
       ]
     },
@@ -189,42 +210,9 @@
       "id": 11,
       "title": "Рубашка Charuel",
       "price": 1600,
-      "image": "../shop/Рубашка Charuel.png",
-      "category": "shirts",
-      "size": [
-        "x",
-        "m",
-        "l",
-        "xl"
+      "image": [
+        "../shop/Рубашка Charuel.png"
       ],
-      "colors": [
-        "black",
-        "white"
-      ]
-    },
-    {
-      "id": 12,
-      "title": "Рубашка Emka",
-      "price": 1300,
-      "priceSale": 1199,
-      "image": "../shop/Рубашка Emka.png",
-      "category": "shirts",
-      "size": [
-        "x",
-        "m",
-        "l",
-        "xl"
-      ],
-      "colors": [
-        "blue",
-        "light blue"
-      ]
-    },
-    {
-      "id": 13,
-      "title": "Рубашка Zara",
-      "price": 1400,
-      "image": "../shop/Рубашка Zara.png",
       "category": "shirts",
       "size": [
         "x",
@@ -234,14 +222,58 @@
       ],
       "colors": [
         "white",
-        "light blue"
+        "black"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Рубашка Emka",
+      "price": 1300,
+      "priceSale": 1199,
+      "image": [
+        "../shop/Рубашка Emka.png"
+      ],
+      "category": "shirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "gainsboro",
+        "beige",
+        "blue"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Рубашка Zara",
+      "price": 1400,
+      "image": [
+        "../shop/Рубашка Zara.png"
+      ],
+      "category": "shirts",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "white",
+        "gainsboro",
+        "beige"
       ]
     },
     {
       "id": 14,
       "title": "Пальто Studio29",
       "price": 8000,
-      "image": "../shop/Пальто Studio29.png",
+      "image": [
+        "../shop/Пальто Studio29 зеленое.png",
+        "../shop/Пальто Studio29 черное.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -250,7 +282,6 @@
         "xl"
       ],
       "colors": [
-        "white",
         "green",
         "black"
       ]
@@ -259,7 +290,10 @@
       "id": 15,
       "title": "Пальто Furly",
       "price": 8600,
-      "image": "../shop/Пальто Furly.png",
+      "image": [
+        "../shop/Пальто Furly бежевое.png",
+        "../shop/Пальто Furly белое.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -267,17 +301,17 @@
         "xl"
       ],
       "colors": [
-        "white",
-        "green",
-        "black",
-        "blue"
+        "wheat",
+        "white"
       ]
     },
     {
       "id": 16,
       "title": "Пальто DreamWhite",
       "price": 9000,
-      "image": "../shop/Пальто DreamWhite.png",
+      "image": [
+        "../shop/Пальто DreamWhite.png"
+      ],
       "category": "coat",
       "size": [
         "l",
@@ -285,15 +319,16 @@
       ],
       "colors": [
         "white",
-        "green",
-        "black"
+        "wheat"
       ]
     },
     {
       "id": 17,
       "title": "Пальто Shi trendy",
       "price": 7800,
-      "image": "../shop/Пальто Shi trendy.png",
+      "image": [
+        "../shop/Пальто Shi trendy.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -303,7 +338,7 @@
       ],
       "colors": [
         "brown",
-        "green",
+        "wheat",
         "black"
       ]
     },
@@ -312,7 +347,9 @@
       "title": "Пальто Choux",
       "price": 8300,
       "priceSale": 7599,
-      "image": "../shop/Пальто Choux.png",
+      "image": [
+        "../shop/Пальто Choux.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -330,7 +367,9 @@
       "id": 19,
       "title": "Пальто Shi Shi",
       "price": 9900,
-      "image": "../shop/Пальто Shi Shi.png",
+      "image": [
+        "../shop/Пальто Shi Shi.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -347,7 +386,9 @@
       "id": 20,
       "title": "Пальто Max Mara",
       "price": 8800,
-      "image": "../shop/Пальто Max Mara.png",
+      "image": [
+        "../shop/Пальто Max Mara.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -356,8 +397,8 @@
         "xl"
       ],
       "colors": [
-        "grey",
-        "black"
+        "black",
+        "grey"
       ]
     },
     {
@@ -365,7 +406,9 @@
       "title": "Костюм Coshi",
       "price": 3100,
       "priceSale": 2599,
-      "image": "../shop/Костюм Coshi.png",
+      "image": [
+        "../shop/Костюм Coshi.png"
+      ],
       "category": "costumes",
       "size": [
         "x",
@@ -375,6 +418,7 @@
       ],
       "colors": [
         "grey",
+        "wheat",
         "black"
       ]
     },
@@ -382,7 +426,10 @@
       "id": 22,
       "title": "Костюм Botrois",
       "price": 3300,
-      "image": "../shop/Костюм Botrois.png",
+      "image": [
+        "../shop/Костюм Botrois серый.png",
+        "../shop/Костюм Botrois розовый.png"
+      ],
       "category": "costumes",
       "size": [
         "x",
@@ -392,15 +439,16 @@
       ],
       "colors": [
         "grey",
-        "dark grey",
-        "black"
+        "pink"
       ]
     },
     {
       "id": 23,
       "title": "Юбка Shi trendy",
       "price": 1600,
-      "image": "../shop/Юбка Shi trendy.png",
+      "image": [
+        "../shop/Юбка Shi trendy.png"
+      ],
       "category": "skirts",
       "size": [
         "x",
@@ -410,32 +458,18 @@
       ],
       "colors": [
         "blue",
-        "light blue"
+        "gainsboro"
       ]
     },
     {
       "id": 24,
-      "title": "Юбка MSGM",
-      "price": 1650,
-      "image": "../shop/Юбка MSGM.png",
-      "category": "skirts",
-      "size": [
-        "x",
-        "m",
-        "l"
-      ],
-      "colors": [
-        "blue",
-        "light blue",
-        "dark blue"
-      ]
-    },
-    {
-      "id": 25,
       "title": "Юбка Lime",
-      "price": 1350,
-      "priceSale": 1199,
-      "image": "../shop/Юбка Lime.png",
+      "price": 1300,
+      "priceSale": 1099,
+      "image": [
+        "../shop/Юбка Lime серая.png",
+        "../shop/Юбка Lime черная.png"
+      ],
       "category": "skirts",
       "size": [
         "x",
@@ -444,15 +478,36 @@
       ],
       "colors": [
         "grey",
-        "light grey",
-        "dark grey"
+        "black"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Юбка Pervert",
+      "price": 1350,
+      "priceSale": 1199,
+      "image": [
+        "../shop/Юбка Pervert белая.png",
+        "../shop/Юбка Pervert черная.png"
+      ],
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "white",
+        "black"
       ]
     },
     {
       "id": 26,
       "title": "Костюм Zarina",
       "price": 3400,
-      "image": "../shop/Костюм Zarina.png",
+      "image": [
+        "../shop/Костюм Zarina.png"
+      ],
       "category": "costumes",
       "size": [
         "x",
@@ -462,7 +517,7 @@
       ],
       "colors": [
         "grey",
-        "dark grey",
+        "blue",
         "black"
       ]
     },
@@ -470,7 +525,9 @@
       "id": 27,
       "title": "Костюм Zara",
       "price": 2900,
-      "image": "../shop/Костюм Zara.png",
+      "image": [
+        "../shop/Костюм Zara.png"
+      ],
       "category": "costumes",
       "size": [
         "x",
@@ -479,16 +536,18 @@
         "xl"
       ],
       "colors": [
-        "blue",
+        "white",
         "grey",
-        "white"
+        "red"
       ]
     },
     {
       "id": 28,
       "title": "Юбка Nikonorova",
       "price": 2000,
-      "image": "../shop/Юбка Nikonorova.png",
+      "image": [
+        "../shop/Юбка Nikonorova.png"
+      ],
       "category": "skirts",
       "size": [
         "x",
@@ -504,7 +563,9 @@
       "id": 29,
       "title": "Юбка Prada",
       "price": 3000,
-      "image": "../shop/Юбка Prada.png",
+      "image": [
+        "../shop/Юбка Prada.png"
+      ],
       "category": "skirts",
       "size": [
         "x",
@@ -520,7 +581,9 @@
       "id": 30,
       "title": "Костюм Nude story",
       "price": 3990,
-      "image": "../shop/Костюм Nude story.png",
+      "image": [
+        "../shop/Костюм Nude story.png"
+      ],
       "category": "costumes",
       "size": [
         "x",
@@ -530,15 +593,17 @@
       ],
       "colors": [
         "grey",
-        "light grey",
-        "dark grey"
+        "gainsboro",
+        "white"
       ]
     },
     {
       "id": 31,
       "title": "Костюм PIRS",
       "price": 3500,
-      "image": "../shop/Костюм PIRS.png",
+      "image": [
+        "../shop/Костюм PIRS.png"
+      ],
       "category": "costumes",
       "size": [
         "x",
@@ -548,14 +613,17 @@
       ],
       "colors": [
         "pink",
-        "blue"
+        "wheat"
       ]
     },
     {
       "id": 32,
       "title": "Костюм The Row",
       "price": 3400,
-      "image": "../shop/Костюм The Row.png",
+      "image": [
+        "../shop/Костюм The Row фиолетовый.png",
+        "../shop/Костюм The Row синий.png"
+      ],
       "category": "costumes",
       "size": [
         "m",
@@ -563,16 +631,17 @@
         "xl"
       ],
       "colors": [
-        "dark grey",
-        "grey",
-        "black"
+        "blueviolet",
+        "grey"
       ]
     },
     {
       "id": 33,
       "title": "Юбка You Wana",
       "price": 3000,
-      "image": "../shop/Юбка You Wana.png",
+      "image": [
+        "../shop/Юбка You Wana.png"
+      ],
       "category": "skirts",
       "size": [
         "x",
@@ -589,7 +658,9 @@
       "title": "Пальто Eclata",
       "price": 7400,
       "priceSale": 6599,
-      "image": "../shop/Пальто Eclata.png",
+      "image": [
+        "../shop/Пальто Eclata.png"
+      ],
       "category": "coat",
       "size": [
         "x",
@@ -600,6 +671,123 @@
       "colors": [
         "grey",
         "black"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Юбка-баллон 'Rachel McAdams'",
+      "price": 3500,
+      "priceSale": 2499,
+      "image": [
+        "../shop/Юбка-баллон белая.png",
+        "../shop/Юбка-баллон черная.png"
+      ],
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "white",
+        "black"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Юбка-карго",
+      "price": 2200,
+      "priceSale": 1799,
+      "image": [
+        "../shop/Юбка-карго.png"
+      ],
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "gainsboro",
+        "white",
+        "grey"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Юбка Helpersew",
+      "price": 1900,
+      "image": [
+        "../shop/Юбка Helpersew голубая.png",
+        "../shop/Юбка Helpersew белая.png",
+        "../shop/Юбка Helpersew синяя.png"
+      ],
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "lavender",
+        "white",
+        "steelblue"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Юбка Love Republic",
+      "price": 1200,
+      "image": [
+        "../shop/Юбка Love Republic.png"
+      ],
+      "category": "skirts",
+      "size": [
+        "s",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "orange"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Юбка Shi Shi",
+      "price": 1300,
+      "priceSale": 999,
+      "image": [
+        "../shop/Юбка Shi Shi.png"
+      ],
+      "category": "skirts",
+      "size": [
+        "x",
+        "m",
+        "l"
+      ],
+      "colors": [
+        "beige",
+        "gainsboro",
+        "white"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Костюм Ushatava",
+      "price": 3500,
+      "priceSale": 3299,
+      "image": [
+        "../shop/Костюм Ushatava.png"
+      ],
+      "category": "costumes",
+      "size": [
+        "x",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "pink"
       ]
     }
   ]

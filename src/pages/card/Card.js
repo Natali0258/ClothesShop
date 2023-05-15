@@ -1,19 +1,13 @@
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Card = (props) => {
-   const { image, title, price, priceSale } = props.item
-   const navigate = useNavigate()
-   const handleClick = () => {
-      navigate('/brands')
-   }
+   const { id, image, title, price, priceSale } = props.item
+
    return (
       <div className="card">
-         <div className="card__image">
-            <img className="card__image-photo" src={image} alt="" />
-            <div className="card__image-overlay">
-               <div className="card__image-overlay-triangle" onClick={handleClick}></div>
-            </div>
-         </div>
+         <Link className="card__image" to={`/product/${id}`}>
+            <img className="card__image-photo" src={image[0]} alt="" />
+         </Link>
          <p className="card__name">{title}</p>
          <p className="card__price">{priceSale
             ? <>

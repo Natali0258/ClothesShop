@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { CustomContext } from '../../Context';
 import logo from '../../images/header-logo.svg';
 import { NavLink } from 'react-router-dom';
 import instagram from '../../images/footer-instagram.svg';
@@ -8,7 +9,7 @@ import visa from '../../images/footer-visa.png';
 import mastercard from '../../images/footer-mastercard.svg';
 
 const Footer = () => {
-   const [status, setStatus] = useState('all')
+   const { status, setStatus } = useContext(CustomContext)
    const [page, setPage] = useState(1)
    return (
       <div className="wrapper">
@@ -28,11 +29,11 @@ const Footer = () => {
                   <li className="footer__link-item"><NavLink className="footer__link" to="/">Главная</NavLink></li>
                   <li className="footer__link-item"><NavLink className="footer__link" to="/shop">Магазин</NavLink>
                      <ul className="footer__link-item-shop">
-                        <li><NavLink className="footer__link-item-shop" to="/shop" onClick={() => { setStatus('coat'); setPage(1) }}>Пальто</NavLink></li>
-                        <li><NavLink className="footer__link-item-shop" to="/shop" onClick={() => { setStatus('costumes'); setPage(1) }}>Костюмы</NavLink></li>
-                        <li><NavLink className="footer__link-item-shop" to="/shop" onClick={() => { setStatus('jeans'); setPage(1) }}>Джинсы</NavLink></li>
-                        <li><NavLink className="footer__link-item-shop" to="/shop">Юбки</NavLink></li>
-                        <li><NavLink className="footer__link-item-shop" to="/shop">Рубашки</NavLink></li>
+                        <li className="footer__link-item-shop-status"><NavLink className={`footer__status ${status === 'coat' && "footer__status_active"}`} to="/shop" onClick={() => { setStatus('coat'); setPage(1) }}>Пальто</NavLink></li>
+                        <li className="footer__link-item-shop-status"><NavLink className={`footer__status ${status === 'costumes' && "footer__status_active"}`} to="/shop" onClick={() => { setStatus('costumes'); setPage(1) }}>Костюмы</NavLink></li>
+                        <li className="footer__link-item-shop-status"><NavLink className={`footer__status ${status === 'jeans' && "footer__status_active"}`} to="/shop" onClick={() => { setStatus('jeans'); setPage(1) }}>Джинсы</NavLink></li>
+                        <li className="footer__link-item-shop-status"><NavLink className={`footer__status ${status === 'skirts' && "footer__status_active"}`} to="/shop" onClick={() => { setStatus('skirts'); setPage(1) }}>Юбки</NavLink></li>
+                        <li className="footer__link-item-shop-status"><NavLink className={`footer__status ${status === 'shirts' && "footer__status_active"}`} to="/shop" onClick={() => { setStatus('shirts'); setPage(1) }}>Рубашки</NavLink></li>
                      </ul>
                   </li>
                   <li className="footer__link-item"><NavLink className="footer__link" to="/brands">О бренде</NavLink></li>

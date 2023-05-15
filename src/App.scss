@@ -1,30 +1,35 @@
-*{
-   margin:0;
-   padding:0;
-   box-sizing:border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-a{
+
+a {
    text-decoration: none;
    // color:inherit;
 }
-ul{
+
+ul {
    list-style: none;
 }
-.container{
-   width:100%;
-   max-width:1110px;
-   margin:0 auto;
+
+.container {
+   width: 100%;
+   max-width: 1110px;
+   margin: 0 auto;
 }
-h2{
+
+h2 {
    font-family: 'Raleway';
    font-weight: 600;
    font-size: 30px;
    font-weight: 140%;
    letter-spacing: 0.02em;
 }
-h3{
+
+h3 {
    font-family: 'Raleway';
-   font-weight: 600;
+   font-weight: 500;
    font-size: 20px;
    font-weight: 140%;
    letter-spacing: 0.02em;
@@ -37,8 +42,9 @@ $darkgreen: #567a7c;
 $lightgrey: rgb(180, 178, 178);
 $grey: rgb(116, 115, 115);
 $lightlightgrey: rgb(235, 225, 205);
+// $gr: #998E78;
 
-.title{
+.title {
    font-weight: 600;
    font-size: 30px;
    line-height: 110%;
@@ -46,42 +52,111 @@ $lightlightgrey: rgb(235, 225, 205);
    color: $black;
    margin-bottom: 26px;
 }
+
+.button {
+   margin-top: 43px;
+   width: 185px;
+   height: 40px;
+   font-weight: 500;
+   font-size: 18px;
+   background-color: $white;
+   border: 1px solid $darkgreen;
+   color: $darkgreen;
+   cursor: pointer;
+
+   &:hover {
+      background-color: $green;
+      border: 1px solid $green;
+      color: $white;
+   }
+}
+
+.button-dark {
+   margin-top: 43px;
+   width: 185px;
+   height: 40px;
+   font-weight: 500;
+   font-size: 18px;
+   background-color: $green;
+   border: 1px solid $green;
+   color: $white;
+   cursor: pointer;
+
+   &:hover {
+      background-color: $white;
+      border: 1px solid $darkgreen;
+      color: $darkgreen;
+   }
+}
+
+.link {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 110%;
+   letter-spacing: 0.02em;
+   color: $black;
+
+   &:hover {
+      text-decoration: underline;
+      color: $green;
+   }
+}
+
+.current {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 110%;
+   letter-spacing: 0.02em;
+   color: $green;
+}
+
+.outinput{
+   border: 0px;
+   height: 40px;
+}
+
 @font-face {
    font-family: "Raleway";
    src: url("./fonts/Raleway-Bold.ttf ");
    font-weight: 700;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Raleway";
    src: url("./fonts/Raleway-SemiBold.ttf ");
    font-weight: 600;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Raleway";
    src: url("./fonts/Raleway-Medium.ttf ");
    font-weight: 500;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Raleway";
    src: url("./fonts/Raleway-Regular.ttf ");
    font-weight: 400;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Raleway";
    src: url("./fonts/Raleway-Light.ttf ");
    font-weight: 300;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Raleway";
    src: url("./fonts/Raleway-ExtraLight.ttf ");
    font-weight: 200;
    font-style: normal;
 }
+
 @import './layout/header/Header.scss';
 @import './layout/footer/Footer.scss';
 @import './pages/home/Home.scss';
@@ -92,3 +167,6 @@ $lightlightgrey: rgb(235, 225, 205);
 @import './pages/login/Login.scss';
 @import './pages/register/Register.scss';
 @import './pages/card/Card.scss';
+@import './pages/product/Product.scss';
+@import './pages/cart/Cart.scss';
+@import './pages/order/Order.scss';

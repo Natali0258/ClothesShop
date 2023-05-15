@@ -9,6 +9,7 @@ import quality from '../../images/home-quality.png';
 import speed from '../../images/home-speed.png';
 import responsibility from '../../images/home-responsibility.png';
 import team from '../../images/home-team.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
    const { t } = useTranslation()
@@ -89,7 +90,7 @@ const Home = () => {
             </section>
 
             <section className="collection">
-               <h2 className="collection__title">Новая коллекция</h2>
+               <h2 className="title">Новая коллекция</h2>
                <div className="collection__images">
                   {
                      collection.map(el => (
@@ -98,12 +99,12 @@ const Home = () => {
                   }
                </div>
                <div className="collection__button">
-                  <button className="collection__button-btn">Открыть магазин</button>
+                  <button className="button">Открыть магазин</button>
                </div>
             </section>
 
             <section className="important">
-               <h2 className="important__title">Что для нас важно</h2>
+               <h2 className="title">Что для нас важно</h2>
                <div className="important__critetions">
                   <div className="important__critetions-item">
                      <img className="important__critetions-item-icon" src={quality} alt="quality" />
@@ -124,14 +125,14 @@ const Home = () => {
             </section>
 
             <section className="team">
-               <h2 className="team__title">Команда мечты "ClothShop"</h2>
+               <h2 className="title">Команда мечты "ClothShop"</h2>
                <div className="team__content">
                   <img className="team__content-image" src={team} alt="team" />
                   <div className="team__content-info">
                      <h3 className="team__content-title">Для каждой</h3>
                      <p className="team__content-text">Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.</p>
                      <p className="team__content-text">ClothShop ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
-                     <a className="team__content-link" href="">Подробнее о бренде</a>
+                     <Link className="team__content-link" to="/brands">Подробнее о бренде</Link>
                   </div>
                </div>
 

@@ -10,6 +10,8 @@ export const Context = (props) => {
       login: ""
    })
    const [shop, setShop] = useState([])
+   const [status, setStatus] = useState('all')
+   const [page, setPage] = useState(1)
 
    const navigate = useNavigate()
 
@@ -52,7 +54,9 @@ export const Context = (props) => {
       registerUser,
       loginUser,
       logOutUser,
-      shop, setShop
+      shop, setShop,
+      status, setStatus,
+      page, setPage
    }
 
    return <CustomContext.Provider value={value}>
