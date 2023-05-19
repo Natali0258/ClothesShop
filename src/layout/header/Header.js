@@ -6,15 +6,17 @@ import { FaUser } from "react-icons/fa";
 import logo from '../../images/header-logo.svg';
 import { useTranslation } from "react-i18next";
 import '../../i18n';
+import { ImInsertTemplate } from "react-icons/im";
 
 const Header = () => {
-   const { user, logOutUser } = useContext(CustomContext)
+   const { user, logOutUser, cart } = useContext(CustomContext)
 
    const { t, i18n } = useTranslation()
 
    const changesLanguage = (lang) => {
       i18n.changeLanguage(lang)
    }
+
    return (
       <div className="container">
          <div className="header">
@@ -35,6 +37,7 @@ const Header = () => {
                <a className="header__contacts-phone" href="tel:+7(913)333-33-33">+7(913)333-33-33</a>
                <Link to="/cart" className="header__contacts-image">
                   <img className="header__contacts-image" src={bag} alt="bag" />
+                  <div className="header__contacts-circle">{cart.reduce((acc, item)=>(+acc + +item.count), 0)}</div>
                </Link>
                <div className="header__contacts-lang">
                   <button type="button" className="header__contacts-lang-ru" onClick={() => changesLanguage("ru")}>ru</button>

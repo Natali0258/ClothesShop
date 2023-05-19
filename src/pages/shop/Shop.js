@@ -9,7 +9,6 @@ import { Pagination } from 'antd';
 
 const Shop = () => {
    const [sort, setSort] = useState('less')
-   // const [status, setStatus] = useState('all')
    const [page, setPage] = useState(1)
    const { shop, status, setStatus } = useContext(CustomContext)
 
@@ -24,18 +23,20 @@ const Shop = () => {
       reset
    } = useForm()
 
-   const hangleSort = (event) => {
-      setSort(event.target.value);
-   }
+   const showCount = shop.filter(item => status === 'all' ? item : item.category === status)
+                           .filter(item => sort === 'discount'? item.priceSale : item)
+                           .filter((item, idx) => idx + 1 <= page * 9 && idx + 1 > page * 9 - 9).length
+
+   const showCountLength = shop.filter(item => status === 'all' ? item : item.category === status).length
 
    return (
       <div className="container">
          <div className="shop">
             <h2 className="title">Магазин</h2>
-            <div className="contact__link">
-               <NavLink to="/" className="contact__link-left link">Главная</NavLink>
+            <div className="shop__link">
+               <NavLink to="/" className="shop__link-left link">Главная</NavLink>
                &#8226;
-               <p className="contact__link-right current">Магазин</p>
+               <p className="shop__link-right current">Магазин</p>
             </div>
 
             <ul className="shop__category">
@@ -67,10 +68,7 @@ const Shop = () => {
 
             <section className="shop__products">
                <div className="shop__products-setting">
-                  <p className="shop__products-setting-info">Показано {shop.filter(item => status === 'all' ? item : item.category === status)
-                     .filter((item, idx) => {
-                        return idx + 1 <= page * 9 && idx + 1 > page * 9 - 9
-                     }).length} из {shop.filter(item => status === 'all' ? item : item.category === status).length} товаров</p>
+                  <p className="shop__products-setting-info">Показано {showCount} из {showCountLength} товаров</p>
 
                   <div className="shop__products-setting-sort">
                      <h4 className="shop__products-setting-sort-title">сортировать по цене: </h4>
@@ -94,16 +92,7 @@ const Shop = () => {
                      } else if (sort === 'big') {
                         return (b.priceSale || b.price) - (a.priceSale || a.price)
                      }
-                  }).filter(item => {
-                     if (sort === 'discount') {
-                        console.log("discount=", item.price)
-                        if (item.priceSale) return item
-                        console.log("priceSale=", item.priceSale)
-                     } else {
-                        console.log("no=", item.price)
-                        return item
-                     }
-                  })
+                  }).filter(item => sort === 'discount'? item.priceSale : item)
                      .filter(item => {
                         if (status === 'all') {
                            return item
@@ -121,24 +110,7 @@ const Shop = () => {
                </div>
             </section>
 
-            <p className="shop__products-info">Показано {shop.filter(item => status === 'all' ? item : item.category === status)
-               .filter((item, idx) => {
-                  return idx + 1 <= page * 9 && idx + 1 > page * 9 - 9
-               }).length} из {shop.filter(item => status === 'all' ? item : item.category === status).length} товаров</p>
-
-            {/* {sort !== 'discount' &&
-               <p className="shop__products-info">Показано {shop.filter(item => status === 'all' ? item : item.category === status)
-                  .filter((item, idx) => {
-                     return idx + 1 <= page * 9 && idx + 1 > page * 9 - 9
-                  }).length} из {shop.filter(item => status === 'all' ? item : item.category === status).length} товаров</p>
-            }
-
-            {sort === 'discount' &&
-               <p className="shop__products-info">Показано {shop.filter(item => status === 'all' ? item : item.category === status)
-                  .filter((item, idx) => {
-                     return idx + 1 <= page * 9 && idx + 1 > page * 9 - 9
-                  }).length} из {shop.filter(item => status === 'all' && item.priceSale ? item : item.category === status).length} товаров</p>
-            }  */}
+            <p className="shop__products-info">Показано {showCount} из {showCountLength} товаров</p>
 
             {
                shop.filter(item => status === 'all' ? item : item.category === status).length > 9 ?

@@ -1,9 +1,6 @@
 import { useContext } from 'react';
 import { CustomContext } from '../../Context';
 import { useTranslation } from 'react-i18next';
-import coat from '../../images/collection-1.png';
-import bomber from '../../images/collection-2.png';
-import costum from '../../images/collection-3.png';
 import Card from '../card/Card';
 import quality from '../../images/home-quality.png';
 import speed from '../../images/home-speed.png';
@@ -14,62 +11,9 @@ import { Link } from 'react-router-dom';
 const Home = () => {
    const { t } = useTranslation()
    // console.log(i18n)
-   const { count, setCount, user } = useContext(CustomContext)
+   const { count, setCount, user, shop } = useContext(CustomContext)
 
-   const collection = [
-      {
-         id: 19,
-         title: "Пальто Shi Shi",
-         price: 9900,
-         image: "../../images/collection-1.png",
-         category: "cout",
-         size: [
-            "x",
-            "m",
-            "l",
-            "xl"
-         ],
-         colors: [
-            "grey",
-            "black"
-         ]
-      },
-      {
-         id: 34,
-         title: "Бомбер",
-         price: 4500,
-         image: "../../images/collection-2.png",
-         category: "bomber",
-         size: [
-            "x",
-            "m",
-            "l",
-            "xl"
-         ],
-         colors: [
-            "red",
-            "black"
-         ]
-      },
-      {
-         id: 27,
-         title: "Костюм Zara",
-         price: 2900,
-         image: "../images/collection-3.png",
-         category: "costumes",
-         size: [
-            "x",
-            "m",
-            "l",
-            "xl"
-         ],
-         colors: [
-            "blue",
-            "grey",
-            "white"
-         ]
-      }
-   ]
+const collection = shop.slice(-3,shop.length) //в качестве новой коллекции выводим последние три элемента массива
 
    return (
       <div className="home">

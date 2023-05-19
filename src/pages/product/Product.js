@@ -7,7 +7,8 @@ import Card from '../card/Card';
 const Product = () => {
     const params = useParams()
     console.log('params=', params)
-    const { status, setStatus, shop } = useContext(CustomContext)
+    const { status, setStatus, shop, addCart } = useContext(CustomContext)
+    const [count, setCount]=useState('1')
     const [product, setProduct] = useState({})
     const [color, setColor] = useState('')
     const [size, setSize] = useState('')
@@ -85,9 +86,31 @@ const Product = () => {
                                     />
                                 )}
                             </ul>
+                            {product.inStock ?
+                                <h3>В наличии: <span>{product.inStock}</span></h3>
+                                : <h3>нет в наличии</h3>
+                            }
                             <div className="product__content-info-form">
-                                <input type="number" min="1" defaultValue={1} className="product__content-info-form-input" />
-                                <button type='button' className="product__content-info-form-btn">Добавить в корзину</button>
+                                <input type="number" disabled={!product.inStock} min="1" max={product.inStock} value={count}
+                                    className="product__content-info-form-input"
+                                    onChange={(e)=>{
+                                        if(e.target.value <= product.inStock){
+                                            setCount(e.target.value)
+                                        }
+                                        }} />
+                                <button type='button' disabled={!product.inStock} 
+                                    className="product__content-info-form-btn"
+                                    onClick={()=>addCart({
+                                        id: product.id,
+                                        title: product.title,
+                                        image: product.image,
+                                        color,
+                                        size,
+                                        count, 
+                                        price: product.priceSale || product.price,
+                                        category: product.category,
+                                        inStock: product.inStock
+                                    })}>Добавить в корзину</button>
                             </div>
                         </div>
                     </div>

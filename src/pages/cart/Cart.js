@@ -1,12 +1,17 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { CustomContext } from '../../Context';
 import { NavLink, useNavigate } from 'react-router-dom';
+import CartItem from './CartItem';
 
 const Cart = () => {
-   const { shop } = useContext(CustomContext)
-   const [number, setNumber]=useState([])
-   const inputRef=React.useRef()
-   const navigation=useNavigate()
+   const { cart, setCart } = useContext(CustomContext)
+   const [value, setValue]=useState('')
+   const [discount, setDiscount]=useState(false)
+
+   const navigation = useNavigate()
+
+   const total = cart.reduce((sum,item)=>sum +item.price*item.count,0)
+   const discountTotal = total - total*20/100
 
    return (
       <div className="container">
@@ -20,49 +25,60 @@ const Cart = () => {
 
             <table className="cart__table">
                <thead>
-               <tr className="cart__table-title">
-                  <th>Товар</th>
-                  <th>Цена</th>
-                  <th>Количество</th>
-                  <th>Всего</th>
-               </tr>
+                  <tr className="cart__table-title">
+                     <th>Товар</th>
+                     <th>Размер</th>
+                     <th>Цвет</th>
+                     <th>Цена</th>
+                     <th>Количество</th>
+                     <th>Всего</th>
+                  </tr>
                </thead>
                <tbody>
-               {
-                  shop.map(item=>(
-                     <tr key={item.id} className="cart__table-rows">
-                        <td><img src={item.image[0]} alt='item.title' className="cart__table-rows-image" />{item.title}</td>
-                        <td>{item.price }</td>
-                        <td><input type="number" min="1" defaultValue={1} className="cart__table-rows-input" 
-                           ref={inputRef} onClick={()=>setNumber(inputRef.current.value)} /></td>
-                        <td>{item.price*number[item.id] }</td>
-                     </tr>
-                  ))
-               }
+                  {
+                     cart.map((item, idx) => (
+                        //key не может быть id, т.к. в корзине может быть выбран несколько раз товар с одним и тем же id
+                        <CartItem key={item} item={item} />
+                     ))
+                  }
                </tbody>
             </table>
             <div className="cart__form">
                <div>
-                  <input type="text" placeholder="Введите купон" className="cart__form-input outinput" />
-                  <button type="button" className="cart__form-btn button">Применить купон</button>
+                  <input type="text" placeholder="Введите купон" value={value}
+                     className="cart__form-input"
+                     onChange={(e)=>setValue(e.target.value)} />
+                  <button type="button" className="cart__form-btn button" onClick={(e)=>{
+                     if(value === "it"){
+                        console.log("discount", discount)
+                        setDiscount(true)
+                     }
+                  }}>Применить купон</button>
                </div>
-               <button type="button" className="cart__form-btn button">Обновить корзину</button>
+               <button type="button" className="cart__form-btn button" onClick={()=>setCart([])}>Очистить корзину</button>
             </div>
             <div className="cart__results">
-               <div></div>
+               <div>
+                  {
+                     discount && <p className="cart__results-text">После применения купона <br /> у вас скидка в размере 20%</p>
+                  }
+               </div>
                <div className="cart__results-right">
                   <div className="cart__results-right-subresult">
                      <p>Подитог: </p>
-                     <div>{}</div>
+                     <div>{ total} руб.</div>
                   </div>
 
                   <div className="cart__results-right-result">
                      <div className="cart__results-right-result-sum">
                         <p>Итого: </p>
-                        <div>{ }</div>
+                        <div>
+                           {!discount && total } 
+                           {discount && discountTotal } руб.
+                        </div>
                      </div>
                      <button className="cart__results-right-result-btn button-dark" type="button"
-                        onClick={()=>navigation('/order')}>Оформить заказ</button>
+                        onClick={() => navigation('/checkout')}>Оформить заказ</button>
                   </div>
                </div>
             </div>

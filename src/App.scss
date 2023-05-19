@@ -91,7 +91,7 @@ $lightlightgrey: rgb(235, 225, 205);
 
 .link {
    font-weight: 600;
-   font-size: 20px;
+   font-size: 16px;
    line-height: 110%;
    letter-spacing: 0.02em;
    color: $black;
@@ -104,15 +104,10 @@ $lightlightgrey: rgb(235, 225, 205);
 
 .current {
    font-weight: 600;
-   font-size: 20px;
+   font-size: 16px;
    line-height: 110%;
    letter-spacing: 0.02em;
    color: $green;
-}
-
-.outinput{
-   border: 0px;
-   height: 40px;
 }
 
 @font-face {
@@ -169,4 +164,5 @@ $lightlightgrey: rgb(235, 225, 205);
 @import './pages/card/Card.scss';
 @import './pages/product/Product.scss';
 @import './pages/cart/Cart.scss';
+@import './pages/checkout/Checkout.scss';
 @import './pages/order/Order.scss';

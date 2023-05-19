@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 
 const Card = (props) => {
-   const { id, image, title, price, priceSale } = props.item
+   const { id, image, title, price, priceSale , inStock} = props.item
 
    return (
       <div className="card">
@@ -14,7 +14,12 @@ const Card = (props) => {
                <span style={{ textDecoration: 'line-through' }}>{price} руб. </span>/
                <span> {priceSale} руб.</span>
             </>
-            : <span>{price} руб.</span>}</p>
+            : <span>{price} руб.</span>}
+         </p>
+            {inStock ?
+            <p>В наличии: <span>{inStock}</span></p>
+            : <p>нет в наличии</p>
+            }
       </div >
    )
 }

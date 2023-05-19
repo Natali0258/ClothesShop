@@ -20,7 +20,7 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -28,7 +28,8 @@
       "colors": [
         "black",
         "gainsboro"
-      ]
+      ],
+      "inStock": 0
     },
     {
       "id": 2,
@@ -40,7 +41,7 @@
       ],
       "category": "shirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -49,7 +50,8 @@
         "beige",
         "black",
         "white"
-      ]
+      ],
+      "inStock": 9
     },
     {
       "id": 3,
@@ -61,7 +63,7 @@
       ],
       "category": "jeans",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -69,7 +71,8 @@
       "colors": [
         "steelblue",
         "black"
-      ]
+      ],
+      "inStock": 80
     },
     {
       "id": 4,
@@ -81,7 +84,7 @@
       ],
       "category": "jeans",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -89,7 +92,8 @@
       "colors": [
         "lavender",
         "powderblue"
-      ]
+      ],
+      "inStock": 11
     },
     {
       "id": 5,
@@ -102,7 +106,7 @@
       ],
       "category": "jeans",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -111,7 +115,8 @@
         "lightblue",
         "lavender",
         "steelblue"
-      ]
+      ],
+      "inStock": 5
     },
     {
       "id": 6,
@@ -123,14 +128,15 @@
       ],
       "category": "jeans",
       "size": [
-        "x",
+        "s",
         "l",
         "xl"
       ],
       "colors": [
         "black",
         "steelblue"
-      ]
+      ],
+      "inStock": 4
     },
     {
       "id": 7,
@@ -141,7 +147,7 @@
       ],
       "category": "jeans",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -149,7 +155,8 @@
       "colors": [
         "white",
         "gainsboro"
-      ]
+      ],
+      "inStock": 14
     },
     {
       "id": 8,
@@ -161,14 +168,15 @@
       ],
       "category": "jeans",
       "size": [
-        "x",
+        "s",
         "m",
         "l"
       ],
       "colors": [
         "wheat",
         "white"
-      ]
+      ],
+      "inStock": 3
     },
     {
       "id": 9,
@@ -186,7 +194,8 @@
       "colors": [
         "gainsboro",
         "blue"
-      ]
+      ],
+      "inStock": 6
     },
     {
       "id": 10,
@@ -204,7 +213,8 @@
       "colors": [
         "gainsboro",
         "white"
-      ]
+      ],
+      "inStock": 34
     },
     {
       "id": 11,
@@ -215,7 +225,7 @@
       ],
       "category": "shirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -223,7 +233,8 @@
       "colors": [
         "white",
         "black"
-      ]
+      ],
+      "inStock": 1
     },
     {
       "id": 12,
@@ -235,7 +246,7 @@
       ],
       "category": "shirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -244,7 +255,8 @@
         "gainsboro",
         "beige",
         "blue"
-      ]
+      ],
+      "inStock": 2
     },
     {
       "id": 13,
@@ -255,7 +267,7 @@
       ],
       "category": "shirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -264,7 +276,8 @@
         "white",
         "gainsboro",
         "beige"
-      ]
+      ],
+      "inStock": 17
     },
     {
       "id": 14,
@@ -276,7 +289,7 @@
       ],
       "category": "coat",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -284,7 +297,8 @@
       "colors": [
         "green",
         "black"
-      ]
+      ],
+      "inStock": 6
     },
     {
       "id": 15,
@@ -296,14 +310,15 @@
       ],
       "category": "coat",
       "size": [
-        "x",
+        "s",
         "m",
         "xl"
       ],
       "colors": [
         "wheat",
         "white"
-      ]
+      ],
+      "inStock": 40
     },
     {
       "id": 16,
@@ -320,7 +335,8 @@
       "colors": [
         "white",
         "wheat"
-      ]
+      ],
+      "inStock": 12
     },
     {
       "id": 17,
@@ -331,7 +347,7 @@
       ],
       "category": "coat",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -340,7 +356,8 @@
         "brown",
         "wheat",
         "black"
-      ]
+      ],
+      "inStock": 10
     },
     {
       "id": 18,
@@ -352,7 +369,7 @@
       ],
       "category": "coat",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -361,26 +378,29 @@
         "blue",
         "green",
         "black"
-      ]
+      ],
+      "inStock": 5
     },
     {
       "id": 19,
-      "title": "Пальто Shi Shi",
-      "price": 9900,
+      "title": "Юбка Shi Shi",
+      "price": 1300,
+      "priceSale": 999,
       "image": [
-        "../shop/Пальто Shi Shi.png"
+        "../shop/Юбка Shi Shi.png"
       ],
-      "category": "coat",
+      "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
-        "l",
-        "xl"
+        "l"
       ],
       "colors": [
-        "grey",
-        "black"
-      ]
+        "beige",
+        "gainsboro",
+        "white"
+      ],
+      "inStock": 3
     },
     {
       "id": 20,
@@ -391,7 +411,7 @@
       ],
       "category": "coat",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -399,7 +419,8 @@
       "colors": [
         "black",
         "grey"
-      ]
+      ],
+      "inStock": 1
     },
     {
       "id": 21,
@@ -411,7 +432,7 @@
       ],
       "category": "costumes",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -420,7 +441,8 @@
         "grey",
         "wheat",
         "black"
-      ]
+      ],
+      "inStock": 1
     },
     {
       "id": 22,
@@ -432,7 +454,7 @@
       ],
       "category": "costumes",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -440,7 +462,8 @@
       "colors": [
         "grey",
         "pink"
-      ]
+      ],
+      "inStock": 18
     },
     {
       "id": 23,
@@ -451,7 +474,7 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -459,7 +482,8 @@
       "colors": [
         "blue",
         "gainsboro"
-      ]
+      ],
+      "inStock": 10
     },
     {
       "id": 24,
@@ -472,14 +496,15 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l"
       ],
       "colors": [
         "grey",
         "black"
-      ]
+      ],
+      "inStock": 2
     },
     {
       "id": 25,
@@ -492,14 +517,15 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l"
       ],
       "colors": [
         "white",
         "black"
-      ]
+      ],
+      "inStock": 24
     },
     {
       "id": 26,
@@ -510,7 +536,7 @@
       ],
       "category": "costumes",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -519,7 +545,8 @@
         "grey",
         "blue",
         "black"
-      ]
+      ],
+      "inStock": 9
     },
     {
       "id": 27,
@@ -530,7 +557,7 @@
       ],
       "category": "costumes",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -539,7 +566,8 @@
         "white",
         "grey",
         "red"
-      ]
+      ],
+      "inStock": 14
     },
     {
       "id": 28,
@@ -550,14 +578,15 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
       ],
       "colors": [
         "black"
-      ]
+      ],
+      "inStock": 4
     },
     {
       "id": 29,
@@ -568,14 +597,15 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
       ],
       "colors": [
         "black"
-      ]
+      ],
+      "inStock": 5
     },
     {
       "id": 30,
@@ -586,7 +616,7 @@
       ],
       "category": "costumes",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -595,26 +625,26 @@
         "grey",
         "gainsboro",
         "white"
-      ]
+      ],
+      "inStock": 31
     },
     {
       "id": 31,
-      "title": "Костюм PIRS",
-      "price": 3500,
+      "title": "Юбка Love Republic",
+      "price": 1200,
       "image": [
-        "../shop/Костюм PIRS.png"
+        "../shop/Юбка Love Republic.png"
       ],
-      "category": "costumes",
+      "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
-        "l",
-        "xl"
+        "l"
       ],
       "colors": [
-        "pink",
-        "wheat"
-      ]
+        "orange"
+      ],
+      "inStock": 10
     },
     {
       "id": 32,
@@ -633,7 +663,8 @@
       "colors": [
         "blueviolet",
         "grey"
-      ]
+      ],
+      "inStock": 7
     },
     {
       "id": 33,
@@ -644,14 +675,15 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
       ],
       "colors": [
         "black"
-      ]
+      ],
+      "inStock": 26
     },
     {
       "id": 34,
@@ -663,7 +695,7 @@
       ],
       "category": "coat",
       "size": [
-        "x",
+        "s",
         "m",
         "l",
         "xl"
@@ -671,27 +703,28 @@
       "colors": [
         "grey",
         "black"
-      ]
+      ],
+      "inStock": 2
     },
     {
       "id": 35,
-      "title": "Юбка-баллон 'Rachel McAdams'",
+      "title": "Костюм Ushatava",
       "price": 3500,
-      "priceSale": 2499,
+      "priceSale": 3299,
       "image": [
-        "../shop/Юбка-баллон белая.png",
-        "../shop/Юбка-баллон черная.png"
+        "../shop/Костюм Ushatava.png"
       ],
-      "category": "skirts",
+      "category": "costumes",
       "size": [
-        "x",
+        "s",
         "m",
-        "l"
+        "l",
+        "xl"
       ],
       "colors": [
-        "white",
-        "black"
-      ]
+        "pink"
+      ],
+      "inStock": 30
     },
     {
       "id": 36,
@@ -703,7 +736,7 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l"
       ],
@@ -711,7 +744,8 @@
         "gainsboro",
         "white",
         "grey"
-      ]
+      ],
+      "inStock": 15
     },
     {
       "id": 37,
@@ -724,7 +758,7 @@
       ],
       "category": "skirts",
       "size": [
-        "x",
+        "s",
         "m",
         "l"
       ],
@@ -732,14 +766,57 @@
         "lavender",
         "white",
         "steelblue"
-      ]
+      ],
+      "inStock": 22
     },
     {
       "id": 38,
-      "title": "Юбка Love Republic",
-      "price": 1200,
+      "title": "Костюм PIRS",
+      "price": 3500,
       "image": [
-        "../shop/Юбка Love Republic.png"
+        "../shop/Костюм PIRS.png"
+      ],
+      "category": "costumes",
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "pink",
+        "wheat"
+      ],
+      "inStock": 9
+    },
+    {
+      "id": 39,
+      "title": "Пальто Shi Shi",
+      "price": 9900,
+      "image": [
+        "../shop/Пальто Shi Shi.png"
+      ],
+      "category": "coat",
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
+      "colors": [
+        "grey",
+        "black"
+      ],
+      "inStock": 8
+    },
+    {
+      "id": 40,
+      "title": "Юбка-баллон 'Rachel McAdams'",
+      "price": 3500,
+      "priceSale": 2499,
+      "image": [
+        "../shop/Юбка-баллон белая.png",
+        "../shop/Юбка-баллон черная.png"
       ],
       "category": "skirts",
       "size": [
@@ -748,47 +825,10 @@
         "l"
       ],
       "colors": [
-        "orange"
-      ]
-    },
-    {
-      "id": 39,
-      "title": "Юбка Shi Shi",
-      "price": 1300,
-      "priceSale": 999,
-      "image": [
-        "../shop/Юбка Shi Shi.png"
+        "white",
+        "black"
       ],
-      "category": "skirts",
-      "size": [
-        "x",
-        "m",
-        "l"
-      ],
-      "colors": [
-        "beige",
-        "gainsboro",
-        "white"
-      ]
-    },
-    {
-      "id": 40,
-      "title": "Костюм Ushatava",
-      "price": 3500,
-      "priceSale": 3299,
-      "image": [
-        "../shop/Костюм Ushatava.png"
-      ],
-      "category": "costumes",
-      "size": [
-        "x",
-        "m",
-        "l",
-        "xl"
-      ],
-      "colors": [
-        "pink"
-      ]
+      "inStock": 4
     }
   ]
 }
