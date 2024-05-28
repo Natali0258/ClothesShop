@@ -1,0 +1,42 @@
+.brands {
+  margin: 40px 0 60px;
+}
+.brands__links {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.brands__magic, .brands__idea {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 30px;
+}
+.brands__magic-image, .brands__idea-image {
+  width: 44%;
+}
+.brands__magic-info, .brands__idea-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 44%;
+}
+.brands__magic-info-title, .brands__idea-info-title {
+  margin-bottom: 40px;
+}
+.brands__magic-info-text, .brands__idea-info-text {
+  margin-bottom: 40px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: 140%;
+  letter-spacing: 0.02em;
+}
+.brands__button {
+  display: flex;
+  justify-content: center;
+}
+.brands__button-btn {
+  margin-top: 43px;
+  width: 210px;
+  height: 60px;
+}/*# sourceMappingURL=Brands.css.map */

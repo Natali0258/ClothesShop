@@ -1,6 +1,6 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { CustomContext } from '../../Context';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useForm, Controller, SubmitHandler } from 'react-hook-form';
 import ReactSelect from 'react-select';
 import Card from '../card/Card';
@@ -10,7 +10,8 @@ import { Pagination } from 'antd';
 const Shop = () => {
    const [sort, setSort] = useState('less')
    const [page, setPage] = useState(1)
-   const { shop, status, setStatus } = useContext(CustomContext)
+   const { shop, status, setStatus, user } = useContext(CustomContext)
+   const navigate = useNavigate()
 
    const {
       register,
@@ -30,14 +31,14 @@ const Shop = () => {
    const showCountLength = shop.filter(item => status === 'all' ? item : item.category === status).length
 
    return (
-      <div className="container">
-         <div className="shop">
+      <div className="shop">
+         <div className="container">
             <h2 className="title">Магазин</h2>
-            <div className="shop__link">
-               <NavLink to="/" className="shop__link-left link">Главная</NavLink>
+            <div className="shop__links">
+               <NavLink to="/" className="shop__links-link link">Главная</NavLink>
                &#8226;
-               <p className="shop__link-right current">Магазин</p>
-            </div>
+               <p className="shop__links-link current">Магазин</p>
+            </div> 
 
             <ul className="shop__category">
                <li className={`shop__category-item ${status === "all" && "shop__category-item_active"}`} onClick={() => {
@@ -68,24 +69,31 @@ const Shop = () => {
 
             <section className="shop__products">
                <div className="shop__products-setting">
-                  <p className="shop__products-setting-info">Показано {showCount} из {showCountLength} товаров</p>
-
+                  { 
+                  user.email === 'admin@mail.ru' ?
+                  <button type='button' className="shop__products-setting-add button"
+                  onClick={() => navigate('/create')}>Добавить товар</button>
+                  : <span> </span>
+                  }
+                  
                   <div className="shop__products-setting-sort">
                      <h4 className="shop__products-setting-sort-title">сортировать по цене: </h4>
                      <div className="shop__products-setting-sort-buttons">
                         <button type="button"
-                           className={`shop__products-setting-sort-buttons-btn ${sort === "less" && "shop__products-setting-sort-buttons-btn_active"}`}
+                           className={`shop__products-setting-sort-buttons-btn button ${sort === "less" && "shop__products-setting-sort-buttons-btn_active"}`}
                            onClick={() => setSort("less")}>сначала дешевые</button>
                         <button type="button"
-                           className={`shop__products-setting-sort-buttons-btn ${sort === "big" && "shop__products-setting-sort-buttons-btn_active"}`}
+                           className={`shop__products-setting-sort-buttons-btn button ${sort === "big" && "shop__products-setting-sort-buttons-btn_active"}`}
                            onClick={() => setSort("big")}>сначала дорогие</button>
                      </div>
                   </div>
-                  <button type="button" className={`shop__products-setting-discount ${sort === "discount" && "shop__products-setting-discount_active"}`}
+                  <button type="button" className={`shop__products-setting-discount button ${sort === "discount" && "shop__products-setting-discount_active"}`}
                      onClick={() => setSort("discount")}>скидки</button>
                </div>
+               <p className="shop__products-setting-info">Показано {showCount} из {showCountLength} товаров</p>
 
                <div className="shop__products-collection">
+                  {/* если есть priceSale, то он учавствует в сортировке, если нет priceSale, то в сортировке учавствует price */}
                   {shop.sort((a, b) => {
                      if (sort === 'less') {
                         return (a.priceSale || a.price) - (b.priceSale || b.price)
@@ -102,7 +110,7 @@ const Shop = () => {
                      }).filter((item, idx) => {
                         return idx + 1 <= page * 9 && idx + 1 > page * 9 - 9
                      }).map(item => (
-                        <div className="shop__products-collection-card">
+                        <div key={item.id} className="shop__products-collection-card">
                            <Card item={item} />
                         </div>
                      ))

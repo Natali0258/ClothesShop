@@ -6,16 +6,16 @@ import { ImCross } from "react-icons/im";
 const CartItem=({item})=>{
     
     const { deleteCart, updateCart} = useContext(CustomContext)
-    const [countItem, setCountItem]=useState(item.count)
+    const [countItem, setCountItem] = useState(item.count)
 
     return(
         <tr className="cart__table-rows">
             <td>
                 <p className="cart__table-rows-del" onClick={()=>{
-                    //console.log("item=",item)
                     deleteCart(item.id, item.color, item.size)}}><ImCross /></p>
                 <Link to={`/product/${item.id}`}>
-                    <img src={item.image[0]} alt={item.title} className="cart__table-rows-image" />
+                    <img src={item.image} alt={item.title} className="cart__table-rows-image" />
+                    {/* <img src={item.pictures.src} alt={item.title} className="cart__table-rows-image" /> */}
                 </Link>
                 {item.title}
             </td>
@@ -27,7 +27,7 @@ const CartItem=({item})=>{
                     onChange={(e)=>{
                         if(e.target.value <= item.inStock){
                         setCountItem(e.target.value)
-                        updateCart(item.id, item.color, item.size, e.target.value)
+                        updateCart(item.id, item.color, item.size, e.target.value) //изменить кол-во товара в корзине
                     }}} />
             </td>
             <td>{item.price * item.count}</td>

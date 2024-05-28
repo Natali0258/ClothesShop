@@ -1,18 +1,9 @@
 .product{
     padding-top: 60px;
 
-    &__link{
+    &__links{
         display: flex;
-        &-left{
-            margin-right: 10px;  
-        }
-        &-right{
-            margin-left: 10px;
-            margin-right: 10px; 
-        }
-        &-title{
-            margin-left: 10px; 
-        }
+        column-gap: 10px;
     }
     &__content{
         display: flex;
@@ -42,6 +33,19 @@
                     align-self: center;
                     text-decoration: line-through;
                     font-size: 30px;
+                }
+                &-add{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    &-sale{
+                        display: flex;
+                        justify-content: start;
+                        &-input{
+                            width: 100px;
+                            padding-left: 20px;
+                        }
+                    }
                 }
             }
             &-size{
@@ -109,7 +113,7 @@
                     line-height: 140%;
                 }
                 &-btn{
-                    padding: 0 50px;
+                    width: 250px;
                     font-weight: 400;
                     font-size: 17px;
                     line-height: 140%;
@@ -118,6 +122,9 @@
                     background: $green;
                     border: none;
                     cursor: pointer;
+                    &:hover {
+                        color: black;
+                    }
                 }
             }
             // выбор числа с помощью стрелок на экране при помощи мыши

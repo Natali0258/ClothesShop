@@ -5,30 +5,33 @@ import bag from '../../images/header-bag.png';
 import { FaUser } from "react-icons/fa";
 import logo from '../../images/header-logo.svg';
 import { useTranslation } from "react-i18next";
-import '../../i18n';
 import { ImInsertTemplate } from "react-icons/im";
 
 const Header = () => {
    const { user, logOutUser, cart } = useContext(CustomContext)
 
-   const { t, i18n } = useTranslation()
+   //const { t, i18n } = useTranslation()
 
-   const changesLanguage = (lang) => {
-      i18n.changeLanguage(lang)
-   }
+   // const changeLanguage = (lng) => {
+   //    i18n.changeLanguage(lng)
+   // }
 
    return (
       <div className="container">
          <div className="header">
             <div className="header__logo">
                <img className="header__logo-image" src={logo} alt="logo" />
-               <span className="header__logo-text">ClothShop</span>
+               <span className="header__logo-text">ClothesShop</span>
             </div>
             <ul className="header__links">
                <li><NavLink className="header__link" to="/">Главная</NavLink></li>
-               <li><NavLink className="header__link" to="/shop">{t("header.link2")}</NavLink></li>
-               <li><NavLink className="header__link" to="/brands">{t("header.link3")}</NavLink></li>
-               <li><NavLink className="header__link" to="/contact">{t("header.link4")}</NavLink></li>
+               <li><NavLink className="header__link" to="/shop">Магазин</NavLink></li>
+               <li><NavLink className="header__link" to="/brands">О бренде</NavLink></li>
+               <li><NavLink className="header__link" to="/contact">Контакты</NavLink></li>
+               {
+                  user.email === "admin@mail.ru" &&
+                  <li><NavLink className="header__link" to="/admin">Админ</NavLink></li>
+               }
             </ul>
             <div className="header__contacts">
                <span className="header__contacts-icon"><svg fill="#567a7c" width="15px" height="15px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -39,10 +42,10 @@ const Header = () => {
                   <img className="header__contacts-image" src={bag} alt="bag" />
                   <div className="header__contacts-circle">{cart.reduce((acc, item)=>(+acc + +item.count), 0)}</div>
                </Link>
-               <div className="header__contacts-lang">
-                  <button type="button" className="header__contacts-lang-ru" onClick={() => changesLanguage("ru")}>ru</button>
-                  <button type="button" className="header__contacts-lang-en" onClick={() => changesLanguage("en")}>en</button>
-               </div>
+               {/* <div className="header__contacts-lang">
+                  <button type="button" className="header__contacts-lang-ru" onClick={() => changeLanguage("ru")}>ru</button>
+                  <button type="button" className="header__contacts-lang-en" onClick={() => changeLanguage("en")}>en</button>
+               </div> */}
 
                {
                   (user && user.login.length > 0) ?

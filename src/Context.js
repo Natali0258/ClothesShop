@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState, useSyncExternalStore } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
@@ -13,11 +13,16 @@ export const Context = (props) => {
    const [status, setStatus] = useState('all')
    const [page, setPage] = useState(1)
    const [cart, setCart] = useState([])
+   const [ticket, setTicket] = useState([]) //купоны
+
+   const getAllClothes = () => {
+      axios("http://localhost:3001/clothes")
+         .then(({ data }) => setShop(data))
+   }
 
    const addCart = (product) => {
       const idx = cart.findIndex(item => item.id === product.id && item.size === product.size && item.color === product.color)
       if (idx >= 0) {  //если в карзине уже есть такой же товар
-      //    cart[idx].count = +cart[idx].count + +product.count //не верно, потому что сложение происходит только после рендера
          setCart(cart.map(item=>{
             if(item.id === product.id && item.size === product.size && item.color === product.color){
                return {...item, count: + item.count + +product.count}
@@ -31,10 +36,10 @@ export const Context = (props) => {
       }
    }
 
-   //обновить корзину
+   //обновить корзину, изменить кол-во товара в корзине
    const updateCart=(id, color, size, count)=>{
       setCart(cart.map(item=>{
-         if(item.id === id && item.size === size && item.color === color){
+         if(item.id === id && item.color === color && item.size === size ){
             return {...item, count:count}
          }else{
             return item
@@ -43,8 +48,12 @@ export const Context = (props) => {
    }
 
    const deleteCart = (id, color, size)=>{
-      setCart(cart.filter(item=>{
-         return (item.id !== id && item.color !== color && item.size !== size)
+      setCart(cart.filter(item => {
+         if (item.id === id){
+            return (item.color !== color || item.size !== size)
+         }else{
+            return item
+         }
       }))
    }
 
@@ -61,10 +70,10 @@ export const Context = (props) => {
       }
 
       //GET-запрос:
-      axios("http://localhost:3001/clothes")
-         .then(({ data }) => setShop(data))
+      getAllClothes()
    }, [])
 
+   //при изменении корзины данные записываются в localStorage
    useEffect(()=>{
       localStorage.setItem('cart', JSON.stringify(cart))
    }, [cart])
@@ -103,7 +112,9 @@ export const Context = (props) => {
       status, setStatus,
       page, setPage,
       cart, setCart, 
-      addCart, deleteCart, updateCart
+      addCart, deleteCart, updateCart,
+      ticket, setTicket,
+      getAllClothes
    }
 
    return <CustomContext.Provider value={value}>

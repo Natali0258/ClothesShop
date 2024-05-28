@@ -2,20 +2,31 @@ import React, { useContext, useState } from 'react'
 import { CustomContext } from '../../Context';
 import { NavLink, useNavigate } from 'react-router-dom';
 import CartItem from './CartItem';
+import axios from 'axios';
 
 const Cart = () => {
-   const { cart, setCart } = useContext(CustomContext)
-   const [value, setValue]=useState('')
-   const [discount, setDiscount]=useState(false)
+   const { cart, setCart, ticket, setTicket} = useContext(CustomContext)
 
    const navigation = useNavigate()
 
+   const useTicket=(e)=>{
+      e.preventDefault()
+      axios(`http://localhost:3001/tickets?title=${e.target[0].value}`)
+      .then(({data})=> {
+         if(data.length){
+            setTicket(data)
+         }else{
+            setTicket('По данному промокоду скидок нет')
+         }
+      })
+   }
+
    const total = cart.reduce((sum,item)=>sum +item.price*item.count,0)
-   const discountTotal = total - total*20/100
+   //const discountTotal = total - total*20/100
 
    return (
-      <div className="container">
-         <div className="cart">
+      <section className="cart">
+         <div className="container">
             <h2 className="title">Корзина</h2>
             <div className="cart__link">
                <NavLink to="/" className="cart__link-left link">Главная</NavLink>
@@ -37,30 +48,24 @@ const Cart = () => {
                <tbody>
                   {
                      cart.map((item, idx) => (
-                        //key не может быть id, т.к. в корзине может быть выбран несколько раз товар с одним и тем же id
-                        <CartItem key={item} item={item} />
+                        //key не может быть id, т.к. в корзине может быть выбран несколько раз товар с одним и тем же id, но разные цвета и размеры
+                        <CartItem key={idx} item={item} />
                      ))
                   }
                </tbody>
             </table>
             <div className="cart__form">
-               <div>
-                  <input type="text" placeholder="Введите купон" value={value}
-                     className="cart__form-input"
-                     onChange={(e)=>setValue(e.target.value)} />
-                  <button type="button" className="cart__form-btn button" onClick={(e)=>{
-                     if(value === "it"){
-                        console.log("discount", discount)
-                        setDiscount(true)
-                     }
-                  }}>Применить купон</button>
-               </div>
+               <form onSubmit={useTicket}>
+                  <input type="text" placeholder="Введите купон" className="cart__form-input" />
+                  <button type="submit" className="cart__form-btn button">Применить купон</button>
+               </form>
                <button type="button" className="cart__form-btn button" onClick={()=>setCart([])}>Очистить корзину</button>
             </div>
             <div className="cart__results">
                <div>
                   {
-                     discount && <p className="cart__results-text">После применения купона <br /> у вас скидка в размере 20%</p>
+                     Array.isArray(ticket) && ticket.length ? <p className="cart__results-text">По данному промокоду <br /> вы получаете скидку в размере {ticket[0].sum}%</p>
+                     : <p className="cart__results-text">{ticket}</p>
                   }
                </div>
                <div className="cart__results-right">
@@ -72,10 +77,7 @@ const Cart = () => {
                   <div className="cart__results-right-result">
                      <div className="cart__results-right-result-sum">
                         <p>Итого: </p>
-                        <div>
-                           {!discount && total } 
-                           {discount && discountTotal } руб.
-                        </div>
+                        <div>{Array.isArray(ticket) && ticket.length ? total - total*ticket[0].sum/100 : total} руб.</div>
                      </div>
                      <button className="cart__results-right-result-btn button-dark" type="button"
                         onClick={() => navigation('/checkout')}>Оформить заказ</button>
@@ -83,7 +85,7 @@ const Cart = () => {
                </div>
             </div>
          </div>
-      </div>
+      </section>
    )
 }
 export default Cart;

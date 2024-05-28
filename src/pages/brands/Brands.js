@@ -5,13 +5,13 @@ import magic from '../../images/brands-magic.jpg';
 
 const Brands = () => {
    return (
-      <div className="container">
-         <div className="brands">
+      <div className="brands">
+         <div className="container">
             <h2 className="title">О бренде</h2>
-            <div className="brands__link">
-               <NavLink to="/" className="brands__link-left link">Главная</NavLink>
+            <div className="brands__links">
+               <NavLink to="/" className="brands__links-link link">Главная</NavLink>
                &#8226;
-               <p className="brands__link-right current">О бренде</p>
+               <p className="brands__links-link current">О бренде</p>
             </div>
 
             <section className="brands__idea">
@@ -31,7 +31,7 @@ const Brands = () => {
             </section>
 
             <div className="brands__button">
-               <button className="brands__button-btn">Перейти в магазин</button>
+               <button className="brands__button-btn button-dark">Перейти в магазин</button>
             </div>
 
          </div>

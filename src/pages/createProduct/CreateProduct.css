@@ -1,0 +1,90 @@
+.create {
+  margin: 40px 0 60px;
+}
+.create__links {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.create__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.create__form-block {
+  display: flex;
+  flex-direction: column;
+}
+.create__form-label {
+  font-weight: 500;
+  font-size: 18px;
+}
+.create__form-input {
+  max-width: 300px;
+  padding-left: 10px;
+}
+.create__form-colors, .create__form-sizes {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.create__form-color {
+  text-align: center;
+  margin-right: 10px;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+}
+.create__form-color-select {
+  position: relative;
+}
+.create__form-color-select::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "+";
+  font-weight: 900;
+  font-size: 30px;
+}
+.create__form-color-black {
+  position: relative;
+}
+.create__form-color-black::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "+";
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+}
+.create__form-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.create__form-size-select {
+  color: white;
+  background: black;
+}
+.create__form-select {
+  max-width: 300px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 10px;
+}/*# sourceMappingURL=CreateProduct.css.map */

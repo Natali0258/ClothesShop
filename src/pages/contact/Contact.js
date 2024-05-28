@@ -13,13 +13,13 @@ const Contact = () => {
    } = useForm()
 
    return (
-      <div className="container">
-         <div className="contact">
+      <div className="contact">
+         <div className="container">
             <h2 className="title">Контакты</h2>
-            <div className="contact__link">
-               <NavLink to="/" className="contact__link-left link">Главная</NavLink>
+            <div className="contact__links">
+               <NavLink to="/" className="contact__links-link link">Главная</NavLink>
                &#8226;
-               <p className="contact__link-right current">Контакты</p>
+               <p className="contact__links-link current">Контакты</p>
             </div>
             
 
@@ -57,7 +57,7 @@ const Contact = () => {
                   <textarea {...register('message', { required: "Это поле обязательное" })} type="text" placeholder="Сообщение" />
                   <span>{errors?.message && errors?.message?.message}</span>
 
-                  <button type="submit">Отправить</button>
+                  <button type="submit" className="button-dark">Отправить</button>
 
                   <div className="contact__message-form-responce">Сообщение успешно отправлено</div>
                </form>

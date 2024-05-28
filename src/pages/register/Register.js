@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { CustomContext } from "../../Context";
+import InputMask from 'react-input-mask';
 
 const Register = () => {
    const { registerUser } = useContext(CustomContext)
@@ -24,7 +25,8 @@ const Register = () => {
             <input {...register('login', { required: "Это поле обязательное" })} type="login" placeholder="Введите login" />
             <span>{errors?.login && errors?.login?.message}</span>
 
-            <input {...register('phone', { required: "Это поле обязательное" })} type="tel" placeholder="Введите номер телефона" />
+            <InputMask mask='+\7\(999)999-99-99' type="tel" placeholder="Введите номер телефона" 
+               {...register('phone', { required: "Это поле обязательное" })} />
             <span>{errors?.phone && errors?.phone?.message}</span>
 
             <input {...register('password', { required: "Это поле обязательное" })} type="password" placeholder="Введите пароль" />

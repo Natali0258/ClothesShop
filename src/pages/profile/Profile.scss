@@ -1,5 +1,16 @@
 .profile {
    margin: 40px 0 60px;
+   &__top{
+      display: flex;
+      justify-content: space-between;
+      &-buttons{
+         display: flex;
+         column-gap: 10px;
+      }
+      &-button{
+         margin-top: 0;
+      }
+   }
    &__link{
       &-left{
          margin-right: 10px;
@@ -34,6 +45,7 @@
             &-text{
                font-weight: 500;
                margin-left: 5px;
+               color: red;
                &:hover{
                   color: $green;
                   cursor: pointer;
@@ -43,8 +55,61 @@
       }
       &-info{
          display: flex;
-         justify-content: space-between;
+         justify-content: start;
+         column-gap: 100px;
+         margin-top: 20px;
+         &-input{
+            padding-left: 10px;
+         }
+      }
+      &-btn{
+         width: 230px;
          margin-top: 20px;
       }
+      &-history{
+         // display: flex;
+         // flex-direction: column;
+         // margin-top: 20px;
+         &-table{
+            width: 100%;
+            margin-top: 20px;
+            &-title{
+               display: grid;
+               grid-template-columns:  7fr 2fr 2fr 2fr 2fr 2fr;
+               & th{
+                  display: flex;
+                  border-bottom: 2px solid $grey;
+                  height: 40px;
+               }
+            }
+            &-order{
+               margin-top: 20px;
+            }
+            &-row{
+               display: grid;
+               grid-template-columns:  7fr 2fr 2fr 2fr 2fr 2fr;
+               & td{
+                  display: flex;
+                  align-items: center;
+               }
+               &-image{
+                  width: 70px;
+                  margin: 10px 30px 0 0;
+               }
+               &-count{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  width: 48px;
+                  height: 48px;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 140%;
+               }
+            }
+         }
+      }
    }
+   
 }

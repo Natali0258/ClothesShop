@@ -1,13 +1,8 @@
 .brands {
    margin: 40px 0 60px;
-   &__link{
+   &__links{
       display:flex;
-      &-left{
-         margin-right: 10px;
-      }
-      &-right{
-         margin-left: 10px;
-      }
+      column-gap: 10px;
    }
    &__magic,
    &__idea {
@@ -40,18 +35,8 @@
       justify-content: center;
       &-btn{
          margin-top: 43px;
-         padding: 17px 30px;
-         font-weight: 500;
-         font-size: 16px;
-         background-color: $green;
-         border:1px solid $green;
-         color: $white;
-         cursor: pointer;
-         &:hover{
-            background-color: $white;
-            border:1px solid $darkgreen;
-            color: $darkgreen;
-      }
+         width: 210px;
+         height: 60px;
       }
    }
 }

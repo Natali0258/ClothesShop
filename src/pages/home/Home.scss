@@ -30,18 +30,7 @@
             }
             &-button{
                margin-top: 80px;
-               padding: 10px 20px;
-               font-weight: 500;
-               font-size: 18px;
-               background-color: $green;
-               border:1px solid $green;
-               color: $white;
-               cursor: pointer;
-               &:hover{
-                  background-color: $white;
-                  border:1px solid $darkgreen;
-                  color: $darkgreen;
-               }
+               width: 190px;
             }
          } 
       }
@@ -88,6 +77,9 @@
       &__button{
          display: flex;
          justify-content: center;
+         &-btn{
+            margin-top: 43px;
+         }
       }
    }
    .important{

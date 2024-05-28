@@ -18,7 +18,7 @@ const Footer = () => {
                <div className="footer__left">
                   <div className="footer__left-logo">
                      <img className="footer__left-logo-image" src={logo} alt="logo" />
-                     <span className="footer__left-logo-text">ClothShop</span>
+                     <span className="footer__left-logo-text">ClothesShop</span>
                   </div>
                   <p className="footer__left-text">&#169; Все права защищены</p>
                   <p className="footer__left-text">Политика конфинденциальности</p>

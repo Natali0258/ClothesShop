@@ -54,28 +54,39 @@
             }
             &-table{
                 margin-right: 150px;
+                display: grid;
+                row-gap: 20px;
                 &-title{
                     display: grid;
-                    grid-template-columns:  5fr 1fr; 
+                    grid-template-columns:  4fr 4fr; 
                     & th{
                         display: flex;
-                        height: 40px;
-                        justify-content: start;
+                        // justify-content: start;
     
                     }
                 }
                 &-rows{
                     display: grid;
-                    grid-template-columns:  5fr 1fr; 
+                    row-gap: 20px;
+                }
+                &-row{
+                    display: grid;
+                    grid-template-columns:  4fr 4fr; 
                     & td{
                         display: flex;
-                        justify-content: start;
+                        justify-content: space-between;
+                        // display: table-cell;
+                    }
+                    &-image{
+                        width: 70px;
+                        margin: 0 130px 0 0;
                     }
                 }
+
+
                 &-foot{
                     background: $lightlightgrey;
                     color:$black;
-                    margin-top: 10px;
                 }
             }
             &-label{

@@ -10,7 +10,7 @@ i18n
    .init({
       fallbackLng: "ru",                    //какой язык устанавливатся изначально
       whitelist: ["ru", "en"],              //какие языки используются на сайте
-      debug: false,
+      debug: true,
       detection: {
          order: ["localStorage", "cookie"],  //где будут хранится данные
          caches: ["localStorage", "cookie"]
@@ -19,4 +19,5 @@ i18n
          escapeValue: false
       }
    });
+
 export default i18n;

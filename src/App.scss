@@ -54,9 +54,9 @@ $lightlightgrey: rgb(235, 225, 205);
 }
 
 .button {
-   margin-top: 43px;
-   width: 185px;
-   height: 40px;
+   max-width: 220px;
+   max-height: 50px;
+   padding: 5px 15px;
    font-weight: 500;
    font-size: 18px;
    background-color: $white;
@@ -72,9 +72,9 @@ $lightlightgrey: rgb(235, 225, 205);
 }
 
 .button-dark {
-   margin-top: 43px;
-   width: 185px;
-   height: 40px;
+   max-width: 2200px;
+   max-height: 50px;
+   padding: 5px 15px;
    font-weight: 500;
    font-size: 18px;
    background-color: $green;
@@ -99,6 +99,7 @@ $lightlightgrey: rgb(235, 225, 205);
    &:hover {
       text-decoration: underline;
       color: $green;
+      cursor: pointer;
    }
 }
 
@@ -166,3 +167,4 @@ $lightlightgrey: rgb(235, 225, 205);
 @import './pages/cart/Cart.scss';
 @import './pages/checkout/Checkout.scss';
 @import './pages/order/Order.scss';
+@import './pages/createProduct/CreateProduct.scss';

@@ -1,0 +1,15 @@
+.admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.MuiPaper-root {
+  top: 100px !important;
+}/*# sourceMappingURL=AdminPanel.css.map */

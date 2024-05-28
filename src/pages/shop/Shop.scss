@@ -1,13 +1,8 @@
 .shop{
    margin: 40px 0 60px;
-   &__link{
+   &__links{
       display:flex;
-      &-left{
-         margin-right: 10px;
-      }
-      &-right{
-         margin-left: 10px;
-      }
+      column-gap: 10px;
    }
    &__category{
       display:flex;
@@ -25,6 +20,7 @@
             background-color: $black;
             border: 2px solid $black;
             color: $white;
+            cursor: pointer;
          }
       }
    }
@@ -35,21 +31,21 @@
          display: flex;
          justify-content: space-between;
          z-index: 10;
-         &-info{
-            color: $lightgrey;
+         &-add{
+            align-self: end;
+            margin-top: 30px;
+            border-radius: 5px;
          }
          &-sort{
             text-align: center;
+            &-title{
+               font-weight: 500;
+               font-size: 18px;
+            }
             &-buttons{
                &-btn{
                   margin-left: 10px;
-                  padding: 5px 10px;
-                  background-color: $white;
-                  border: 2px solid $green;
                   border-radius: 5px;
-                  &:hover{
-                     background-color: $green;
-                  }
                   &_active{
                      background-color: $green;
                      color: $white;
@@ -58,26 +54,24 @@
             }
          }
          &-discount{
-            display:flex;
-            margin-top: 30px;
-            padding: 5px 10px;
-            background-color: $white;
-            border: 2px solid $green;
+            align-self: end;
             border-radius: 5px;
-            &:hover{
-               background-color: $green;
-            }
             &_active{
                background-color: $green;
                color: $white;
             }
+         }
+         &-info{
+            color: $lightgrey;
+            margin-top: 10px;
+            margin-bottom: 0;
          }
       }
       &-collection{
          display: flex;
          justify-content:space-between;
          flex-wrap:wrap;
-         margin-top: 20px;
+         margin-top: 10px;
          &-card{
             width: 31%;
             height: 550px;
