@@ -5,8 +5,8 @@ import Card from '../card/Card';
 import quality from '../../images/home-quality.png';
 import speed from '../../images/home-speed.png';
 import responsibility from '../../images/home-responsibility.png';
-import team from '../../images/home-team.jpg';
 import { Link } from 'react-router-dom';
+import Slider from './Slider.js';
 
 const Home = () => {
    //const { t, i18n } = useTranslation();
@@ -73,7 +73,7 @@ const collection = shop.slice(-3,shop.length) //в качестве новой �
             <section className="team">
                <h2 className="title">Команда мечты "ClothShop"</h2>
                <div className="team__content">
-                  <img className="team__content-image" src={team} alt="team" />
+                  <Slider />
                   <div className="team__content-info">
                      <h3 className="team__content-title">Для каждой</h3>
                      <p className="team__content-text">Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.</p>
