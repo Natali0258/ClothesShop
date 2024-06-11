@@ -66,13 +66,13 @@ const Checkout=()=>{
         })
 
         //уменьшаем лимит купона на 1 или, если лимит равен 1, то удаляем купон
-        await Array.isArray(ticket) && ticket.length && ticket[0].count > 1 ?
+        await Array.isArray(ticket) && ticket.length && ticket[0].count && ticket[0].count > 1 ?
             axios.patch(`http://localhost:3001/tickets/${ticket[0].id}`, {
                 count: ticket[0].count - 1
-            }).then(() => console.log('Успешно изменено лимит промокода'))
-            : ticket[0].count === 1 ? 
+            }).then(() => console.log('Успешно изменен лимит промокода'))
+            : (ticket[0] && ticket[0].count === 1) ? 
             axios.delete(`http://localhost:3001/tickets/${ticket[0].id}`).then(() => console.log('Промокод успешно удален'))
-            : console.log('Error')
+            : console.log('Купон не введен')
 
         await reset()
         await setCart([])

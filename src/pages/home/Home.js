@@ -60,24 +60,24 @@ const collection = shop.slice(-3,shop.length) //в качестве новой �
                   <div className="important__critetions-item">
                      <img className="important__critetions-item-icon" src={speed} alt="speed" />
                      <h3>Скорость</h3>
-                     <p className="important__critetions-item-text">Благодаря отлаженной системе в "ClothShop" мы можем отшивать до 30-ти единиц продукции в наших собственных цехах.</p>
+                     <p className="important__critetions-item-text">Благодаря отлаженной системе в "ClothesShop" мы можем отшивать до 30-ти единиц продукции в наших собственных цехах.</p>
                   </div>
                   <div className="important__critetions-item">
                      <img className="important__critetions-item-icon" src={responsibility} alt="responsibility" />
                      <h3>Ответственность</h3>
-                     <p className="important__critetions-item-text">Мы заботимся о людях и природе. Безотходное производство и комфортные условия труда - всё это "ClothShop".</p>
+                     <p className="important__critetions-item-text">Мы заботимся о людях и природе. Безотходное производство и комфортные условия труда - всё это "ClothesShop".</p>
                   </div>
                </div>
             </section>
 
             <section className="team">
-               <h2 className="title">Команда мечты "ClothShop"</h2>
+               <h2 className="title">Команда мечты "ClothesShop"</h2>
                <div className="team__content">
                   <Slider />
                   <div className="team__content-info">
                      <h3 className="team__content-title">Для каждой</h3>
                      <p className="team__content-text">Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.</p>
-                     <p className="team__content-text">ClothShop ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
+                     <p className="team__content-text">ClothesShop ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
                      <Link className="team__content-link" to="/brands">Подробнее о бренде</Link>
                   </div>
                </div>

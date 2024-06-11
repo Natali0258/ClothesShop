@@ -6,13 +6,13 @@ const Order = () => {
     return(
         <div className="container">
             <div className="order">
-            <h2 className="title">Заказ получен</h2>
+            <h2 className="title">Статус заказа</h2>
             <div className="order__link">
                 <NavLink to="/" className="order__link-left link">Главная</NavLink>
                     &#8226;
                 <NavLink to="/checkout" className="order__link-right link">Оформление заказа</NavLink>
                     &#8226;
-                <p className="order__link-title current">Заказ получен</p>
+                <p className="order__link-title current">Статус заказа</p>
             </div>
 
             <div className="order__content">

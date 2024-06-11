@@ -6,13 +6,19 @@ export const CustomContext = createContext()
 
 export const Context = (props) => {
 
-   const [user, setUser] = useState({
-      login: ""
+   const [user, setUser] = useState(() => {
+      // Используем функцию для инициализации user из localStorage при отрисовке компонента
+      const storedUser = localStorage.getItem('user');
+      return storedUser ? JSON.parse(storedUser) : {login: ""};
    })
    const [shop, setShop] = useState([])
    const [status, setStatus] = useState('all')
    const [page, setPage] = useState(1)
-   const [cart, setCart] = useState([])
+   const [cart, setCart] = useState(() => {
+      // Используем функцию для инициализации cart из localStorage при отрисовке компонента
+      const storedCart = localStorage.getItem('cart');
+      return storedCart ? JSON.parse(storedCart) : [];
+   })
    const [ticket, setTicket] = useState([]) //купоны
 
    const getAllClothes = () => {
@@ -59,13 +65,13 @@ export const Context = (props) => {
 
    const navigate = useNavigate()
 
-   //при обнавлении страницы данные о user'е и cart берутся из localStorage
+   //при обновлении страницы данные о user'е и cart берутся из localStorage
    useEffect(() => {
       if (localStorage.getItem('user') !== null) {
          setUser(JSON.parse(localStorage.getItem('user')))
       }
 
-      if(localStorage.getItem('cart') !== null){
+      if(localStorage.getItem('cart') !== null && localStorage.getItem('cart').length > 0){
          setCart(JSON.parse(localStorage.getItem('cart')))
       }
 
@@ -77,6 +83,11 @@ export const Context = (props) => {
    useEffect(()=>{
       localStorage.setItem('cart', JSON.stringify(cart))
    }, [cart])
+
+   //при оформлении заказа данные записываются в localStorage
+   useEffect(()=>{
+      localStorage.setItem('user', JSON.stringify(user))
+   }, [user])
 
    const registerUser = (data) => {
       axios.post("http://localhost:3001/register", { ...data, orders: [] })

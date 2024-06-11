@@ -17,7 +17,6 @@ const CreateProduct = () => {
     const {register,reset, handleSubmit} = useForm()
 
     const createProduct = (data) => {
-        // console.log("data", data)
         axios.post("http://localhost:3001/clothes", {
             ...data,
             colors,

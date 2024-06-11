@@ -12,88 +12,16 @@
       "password": "$2a$10$jmOw3JAfe8h34HMjMNZbbOdiIRhrKVs0aOmk50BeZDJ2nEu2wto/W",
       "login": "admin",
       "phone": "+7(999)999-99-99",
-      "orders": [
-        {
-          "name": "Olga",
-          "email": "Olga@mail.ru",
-          "phone": "+7(913)111-11-12",
-          "country": "Россия",
-          "city": "Москва",
-          "street": "Ленина",
-          "house": "22",
-          "apartment": "11",
-          "message": "Джинсы Studio29 голубые",
-          "clothes": [
-            {
-              "id": 42,
-              "title": "Джинсы Studio29 голубые",
-              "image": "../shop/Джинсы Studio29 голубые.png",
-              "color": "white",
-              "size": "XS",
-              "count": "2",
-              "price": "2999",
-              "category": "jeans",
-              "inStock": "5"
-            }
-          ],
-          "price": 5698.1,
-          "date": "2024-05-28T15:10:50.622Z"
-        }
-      ],
+      "orders": [],
       "id": 2
     },
     {
       "email": "Olga@mail.ru",
-      "password": "$2a$10$g8ywtCEq8lJZnmhHCpkei.7ykan7VEhDdLW7QAswPq9farkqhK7Q6",
+      "password": "$2a$10$vpVOTzb.hV4QBLNui8gqtuGBoklKkHuVB43ZjRyKTpfa.gr6Xwnl.",
       "login": "Olga",
-      "phone": "+7(111)111-11-12",
-      "orders": [
-        {
-          "name": "Olga",
-          "email": "Olga@mail.ru",
-          "phone": "+7(111)111-11-11",
-          "country": "Россия",
-          "city": "Москва",
-          "street": "Ленина",
-          "house": "22",
-          "apartment": "11",
-          "message": "Джинсы, Рубашка ",
-          "clothes": [
-            {
-              "id": 3,
-              "title": "Джинсы Emka",
-              "image": "../shop/Джинсы Emka синие.png",
-              "color": "steelblue",
-              "size": "m",
-              "count": 2,
-              "price": 1990,
-              "category": "jeans",
-              "inStock": 80
-            },
-            {
-              "id": 2,
-              "title": "Рубашка Lime",
-              "image": "../shop/Рубашка Lime.png",
-              "color": "white",
-              "size": "s",
-              "count": "1",
-              "price": 1199,
-              "category": "shirts",
-              "inStock": 8
-            }
-          ],
-          "price": 4920.05,
-          "date": "2024-05-06T11:33:18.347Z"
-        }
-      ],
+      "phone": "+7(111)111-11-11",
+      "orders": [],
       "id": 3
-    },
-    {
-      "email": "natali0258@yandex.ru",
-      "password": "$2a$10$g6RC4yaOLjVkdycPDnHFIuQcOgSmaDRUZk1NTMBGS.uQstp8NAdSe",
-      "login": "Natali",
-      "phone": "+7(913)333-33-33",
-      "id": 4
     }
   ],
   "clothes": [
@@ -131,7 +59,7 @@
         "black",
         "white"
       ],
-      "inStock": 7
+      "inStock": 10
     },
     {
       "id": 3,
@@ -149,7 +77,7 @@
         "steelblue",
         "black"
       ],
-      "inStock": 78
+      "inStock": 80
     },
     {
       "id": 4,
@@ -167,7 +95,7 @@
         "lavender",
         "powderblue"
       ],
-      "inStock": 15
+      "inStock": 20
     },
     {
       "id": 5,
@@ -186,7 +114,7 @@
         "lavender",
         "steelblue"
       ],
-      "inStock": 5,
+      "inStock": 10,
       "priceSale": 2250
     },
     {
@@ -204,7 +132,7 @@
         "black",
         "steelblue"
       ],
-      "inStock": 4
+      "inStock": 10
     },
     {
       "id": 7,
@@ -222,7 +150,7 @@
         "white",
         "gainsboro"
       ],
-      "inStock": 14,
+      "inStock": 30,
       "priceSale": 1530
     },
     {
@@ -241,7 +169,7 @@
         "wheat",
         "white"
       ],
-      "inStock": 3
+      "inStock": 30
     },
     {
       "id": 9,
@@ -258,7 +186,7 @@
         "gainsboro",
         "blue"
       ],
-      "inStock": 5
+      "inStock": 10
     },
     {
       "id": 10,
@@ -275,7 +203,7 @@
         "gainsboro",
         "white"
       ],
-      "inStock": 34
+      "inStock": 40
     },
     {
       "id": 11,
@@ -293,7 +221,7 @@
         "white",
         "black"
       ],
-      "inStock": 1
+      "inStock": 10
     },
     {
       "id": 12,
@@ -313,7 +241,7 @@
         "beige",
         "blue"
       ],
-      "inStock": 2
+      "inStock": 20
     },
     {
       "id": 13,
@@ -332,7 +260,7 @@
         "gainsboro",
         "beige"
       ],
-      "inStock": 17
+      "inStock": 20
     },
     {
       "id": 14,
@@ -356,7 +284,7 @@
     {
       "id": 15,
       "title": "Пальто Furly",
-      "price": 8600,
+      "price": 10600,
       "image": "../shop/Пальто Furly бежевое.png",
       "category": "coat",
       "sizes": [
@@ -368,7 +296,7 @@
         "wheat",
         "white"
       ],
-      "inStock": 39
+      "inStock": 37
     },
     {
       "id": 16,
@@ -555,7 +483,7 @@
         "white",
         "black"
       ],
-      "inStock": 24
+      "inStock": 30
     },
     {
       "id": 26,
@@ -884,13 +812,13 @@
       "id": 1,
       "title": "itrun",
       "sum": 5,
-      "count": 27
+      "count": 30
     },
     {
       "id": 2,
       "title": "Subina",
       "sum": 15,
-      "count": 5
+      "count": 50
     },
     {
       "id": 3,
@@ -899,72 +827,5 @@
       "count": 100
     }
   ],
-  "orders": [
-    {
-      "name": "Olga",
-      "email": "Olga@mail.ru",
-      "phone": "+7(111)111-11-11",
-      "country": "Россия",
-      "city": "Москва",
-      "street": "Ленина",
-      "house": "22",
-      "apartment": 12,
-      "message": "Джинсы, Рубашка ",
-      "clothes": [
-        {
-          "id": 3,
-          "title": "Джинсы Emka",
-          "image": "../shop/Джинсы Emka синие.png",
-          "color": "steelblue",
-          "size": "m",
-          "count": 2,
-          "price": 1990,
-          "category": "jeans",
-          "inStock": 80
-        },
-        {
-          "id": 2,
-          "title": "Рубашка Lime",
-          "image": "../shop/Рубашка Lime.png",
-          "color": "white",
-          "size": "s",
-          "count": "1",
-          "price": 1199,
-          "category": "shirts",
-          "inStock": 8
-        }
-      ],
-      "price": 4920.05,
-      "date": "2024-05-06T11:33:18.339Z",
-      "id": 1,
-      "inStock": null
-    },
-    {
-      "name": "Olga",
-      "email": "Olga@mail.ru",
-      "phone": "+7(913)111-11-12",
-      "country": "Россия",
-      "city": "Москва",
-      "street": "Ленина",
-      "house": "22",
-      "apartment": "11",
-      "message": "Джинсы Studio29 голубые",
-      "clothes": [
-        {
-          "id": 42,
-          "title": "Джинсы Studio29 голубые",
-          "image": "../shop/Джинсы Studio29 голубые.png",
-          "color": "white",
-          "size": "XS",
-          "count": "2",
-          "price": "2999",
-          "category": "jeans",
-          "inStock": "5"
-        }
-      ],
-      "price": 5698.1,
-      "date": "2024-05-28T15:10:50.613Z",
-      "id": 2
-    }
-  ]
+  "orders": []
 }

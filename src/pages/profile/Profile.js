@@ -1,11 +1,10 @@
-import { useContext, useRef, useState } from 'react';
+import { useContext, useState } from 'react';
 import { CustomContext } from "../../Context";
 import { Link, NavLink } from "react-router-dom";
 import edit from "../../images/profile-edit.png";
 import axios from 'axios';
 import InputMask from 'react-input-mask';
 import {useForm} from 'react-hook-form'; 
-import CartItem from '../cart/CartItem';
 
 const Profile = () => {
    const { user, setUser } = useContext(CustomContext)
