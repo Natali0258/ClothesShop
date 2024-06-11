@@ -1,4 +1,4 @@
-import { List, Datagrid, NumberField, DateField, TextField, EditButton, DeleteButton} from 'react-admin';
+import { List, Datagrid, DateField, TextField, EditButton, DeleteButton} from 'react-admin';
 import '../AdminPanel.css';
 
 const ListOrders=()=>{
