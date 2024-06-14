@@ -1,4 +1,4 @@
-![scrinshot](https://github.com/Natali0258/ClothShop/blob/master/src/images/ClothesShopColage.png)
+![scrinshot](https://github.com/Natali0258/ClothShop/blob/master/src/images/ClothesShopCollage.png)
 
 # Тема: ClothesShop - интернет-магазин
 
