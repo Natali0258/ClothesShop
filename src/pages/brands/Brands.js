@@ -1,9 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import idea from '../../images/brands-idea.jpg';
 import magic from '../../images/brands-magic.jpg';
 
 const Brands = () => {
+   const novigate = useNavigate();
+
    return (
       <div className="brands">
          <div className="container">
@@ -31,7 +33,8 @@ const Brands = () => {
             </section>
 
             <div className="brands__button">
-               <button className="brands__button-btn button-dark">Перейти в магазин</button>
+               <button className="brands__button-btn button-dark"
+               onClick={()=>novigate('/shop')}>Перейти в магазин</button>
             </div>
 
          </div>

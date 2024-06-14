@@ -36,12 +36,11 @@ const Contact = () => {
                <p className="contact__links-link current">Контакты</p>
             </div>
             
-
-            <section className="contact__map">
+            {/* <section className="contact__map">
                <div className="contact__map-image">
                   <Map />
                </div>
-            </section>
+            </section> */}
 
             <section className="contact__info">
                <div className="contact__info-item">

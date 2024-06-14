@@ -6,7 +6,7 @@
    }
    &__category{
       display:flex;
-      margin: 30px 0;
+      margin: 20px 0;
       &-item{
          padding: 10px 30px;
          margin-right: 5px;
@@ -71,7 +71,7 @@
          display: flex;
          justify-content:space-between;
          flex-wrap:wrap;
-         margin-top: 10px;
+         margin-top: 0px;
          &-card{
             width: 31%;
             height: 550px;

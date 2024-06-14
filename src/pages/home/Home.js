@@ -5,12 +5,13 @@ import Card from '../card/Card';
 import quality from '../../images/home-quality.png';
 import speed from '../../images/home-speed.png';
 import responsibility from '../../images/home-responsibility.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Slider from './Slider.js';
 
 const Home = () => {
    //const { t, i18n } = useTranslation();
    const { count, setCount, user, shop } = useContext(CustomContext)
+   const novigate = useNavigate()
 
 const collection = shop.slice(-3,shop.length) //в качестве новой коллекции выводим последние три элемента массива
 
@@ -25,7 +26,8 @@ const collection = shop.slice(-3,shop.length) //в качестве новой �
                      <p className="main__content-info-text">Утонченные сочетания и бархатные
          оттенки - вот то, что вы искали в этом
          сезоне. Время исследовать.</p>
-                     <button className="main__content-info-button button-dark">Открыть магазин</button>
+                     <button className="main__content-info-button button-dark" 
+                     onClick={()=>novigate('/shop')}>Открыть магазин</button>
                   </div>
                </div>
                <div className="main__images">
@@ -45,7 +47,8 @@ const collection = shop.slice(-3,shop.length) //в качестве новой �
                   }
                </div>
                <div className="collection__button">
-                  <button className="collection__button-btn button">Открыть магазин</button>
+                  <button className="collection__button-btn button"
+                  onClick={()=>novigate('/shop')}>Открыть магазин</button>
                </div>
             </section>
 

@@ -20,7 +20,34 @@
       "password": "$2a$10$vpVOTzb.hV4QBLNui8gqtuGBoklKkHuVB43ZjRyKTpfa.gr6Xwnl.",
       "login": "Olga",
       "phone": "+7(111)111-11-11",
-      "orders": [],
+      "orders": [
+        {
+          "name": "Olga",
+          "email": "Olga@mail.ru",
+          "phone": "+7(111)111-11-11",
+          "country": "Россия",
+          "city": "Москва",
+          "street": "Ленина",
+          "house": "22",
+          "apartment": "11",
+          "message": "coat",
+          "clothes": [
+            {
+              "id": 15,
+              "title": "Пальто Furly",
+              "image": "../shop/Пальто Furly бежевое.png",
+              "color": "wheat",
+              "size": "S",
+              "count": "1",
+              "price": 10600,
+              "category": "coat",
+              "inStock": 37
+            }
+          ],
+          "price": 10070,
+          "date": "2024-06-14T12:13:29.219Z"
+        }
+      ],
       "id": 3
     }
   ],
@@ -296,7 +323,7 @@
         "wheat",
         "white"
       ],
-      "inStock": 37
+      "inStock": 36
     },
     {
       "id": 16,
@@ -812,7 +839,7 @@
       "id": 1,
       "title": "itrun",
       "sum": 5,
-      "count": 40
+      "count": 39
     },
     {
       "id": 2,
@@ -827,5 +854,33 @@
       "count": 100
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "Olga",
+      "email": "Olga@mail.ru",
+      "phone": "+7(111)111-11-11",
+      "country": "Россия",
+      "city": "Москва",
+      "street": "Ленина",
+      "house": "22",
+      "apartment": "11",
+      "message": "coat",
+      "clothes": [
+        {
+          "id": 15,
+          "title": "Пальто Furly",
+          "image": "../shop/Пальто Furly бежевое.png",
+          "color": "wheat",
+          "size": "S",
+          "count": "1",
+          "price": 10600,
+          "category": "coat",
+          "inStock": 37
+        }
+      ],
+      "price": 10070,
+      "date": "2024-06-14T12:13:29.210Z",
+      "id": 1
+    }
+  ]
 }
