@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/ClothesShop/static/css/main.28b2e03a.css",
+    "main.js": "/ClothesShop/static/js/main.538ad130.js",
+    "static/media/home-center.png": "/ClothesShop/static/media/home-center.ebeae43e3ddf5e83c567.png",
+    "static/media/home-team-friend.png": "/ClothesShop/static/media/home-team-friend.e56dfd6eeed2ec614f52.png",
+    "static/media/brands-idea.jpg": "/ClothesShop/static/media/brands-idea.c24baf9017c9b27a4f3e.jpg",
+    "static/media/home-team-friends.png": "/ClothesShop/static/media/home-team-friends.38fe307d486549449504.png",
+    "static/media/brands-magic.jpg": "/ClothesShop/static/media/brands-magic.0062c0f42194af6e15ee.jpg",
+    "static/media/home-team.jpg": "/ClothesShop/static/media/home-team.402f2441e2eeea7952bb.jpg",
+    "static/media/Raleway-ExtraLight.ttf": "/ClothesShop/static/media/Raleway-ExtraLight.f1c1f1dab0ae97a6c1c4.ttf",
+    "static/media/Raleway-Light.ttf": "/ClothesShop/static/media/Raleway-Light.f86090a73e4996cf067e.ttf",
+    "static/media/Raleway-Regular.ttf": "/ClothesShop/static/media/Raleway-Regular.cedc82ec9fbfca66222a.ttf",
+    "static/media/Raleway-SemiBold.ttf": "/ClothesShop/static/media/Raleway-SemiBold.b8a54fb018bb5a0d762c.ttf",
+    "static/media/Raleway-Medium.ttf": "/ClothesShop/static/media/Raleway-Medium.10498e1dc3ccaf664c71.ttf",
+    "static/media/Raleway-Bold.ttf": "/ClothesShop/static/media/Raleway-Bold.b430856ea5fc5c516851.ttf",
+    "static/media/home-left.png": "/ClothesShop/static/media/home-left.33bbba5920c7e0641a20.png",
+    "static/media/home-right.png": "/ClothesShop/static/media/home-right.472b45cd3ba5aa78dd16.png",
+    "static/media/home-quality.png": "/ClothesShop/static/media/home-quality.c2eecee827c73ba92182.png",
+    "static/media/home-speed.png": "/ClothesShop/static/media/home-speed.46a32e96650cfffbce2a.png",
+    "static/media/home-responsibility.png": "/ClothesShop/static/media/home-responsibility.8754c0a22b4e85ec846e.png",
+    "static/media/footer-twitter.svg": "/ClothesShop/static/media/footer-twitter.bb72af4675553190b04bf30d5ed3af8d.svg",
+    "static/media/header-logo.svg": "/ClothesShop/static/media/header-logo.4773b113b4445b5ee364c7a640d049a1.svg",
+    "static/media/footer-facebook.svg": "/ClothesShop/static/media/footer-facebook.a60b2d6e080e2a32aa3e5d523ed3821e.svg",
+    "index.html": "/ClothesShop/index.html",
+    "static/media/footer-instagram.svg": "/ClothesShop/static/media/footer-instagram.c9e22e768df96e7f2b47a181f0b280c8.svg",
+    "static/media/getFetch.cjs": "/ClothesShop/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "static/media/footer-mastercard.svg": "/ClothesShop/static/media/footer-mastercard.1eb3643914d83bac087d4cbb2d9c3d95.svg",
+    "main.28b2e03a.css.map": "/ClothesShop/static/css/main.28b2e03a.css.map",
+    "main.538ad130.js.map": "/ClothesShop/static/js/main.538ad130.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28b2e03a.css",
+    "static/js/main.538ad130.js"
+  ]
+}

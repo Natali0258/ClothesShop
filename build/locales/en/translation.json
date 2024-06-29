@@ -1,0 +1,17 @@
+{
+   "header": {
+      "link1": "Main",
+      "link2": "Shop",
+      "link3": "About Brand",
+      "link4": "Contacts"
+   },
+   "home": {
+      "firstScreen": {
+         "title": "New arrivals this season",
+         "text": "Refined combinations and velvet
+         shades - that's what you were looking for in this
+         season. Time to explore."
+      },
+      "btn": "Open shop"
+   }
+}
